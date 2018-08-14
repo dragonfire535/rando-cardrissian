@@ -1,0 +1,51 @@
+{
+	"name": "cards-against-humanity",
+	"version": "1.0.0",
+	"description": "Cards Against Humanity, but for Discord!",
+	"main": "CAH.js",
+	"scripts": {
+		"test": "npm run lint",
+		"lint": "eslint . --ext .js --ext .json",
+		"start": "node CAH.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/dragonfire535/discord-cards-against-humanity.git"
+	},
+	"keywords": [
+		"bot",
+		"cards-against-humanity",
+		"discord",
+		"discord-api",
+		"discord-bot",
+		"discord-js"
+	],
+	"author": "dragonfire535 <danielbodendahl@gmail.com>",
+	"license": "GPL-3.0",
+	"bugs": {
+		"url": "https://github.com/dragonfire535/discord-cards-against-humanity/issues"
+	},
+	"homepage": "https://github.com/dragonfire535/discord-cards-against-humanity#readme",
+	"engines": {
+		"node": ">=10.1.0"
+	},
+	"dependencies": {
+		"common-tags": "^1.8.0",
+		"discord-akairo": "github:1Computer1/discord-akairo",
+		"discord.js": "github:discordjs/discord.js",
+		"erlpack": "github:discordapp/erlpack",
+		"node-superfetch": "^0.1.3",
+		"zlib-sync": "^0.1.4"
+	},
+	"devDependencies": {
+		"eslint": "^5.3.0",
+		"eslint-config-amber": "^1.0.4",
+		"eslint-plugin-json": "^1.2.1"
+	},
+	"eslintConfig": {
+		"extends": "amber",
+		"plugins": [
+			"json"
+		]
+	}
+}
