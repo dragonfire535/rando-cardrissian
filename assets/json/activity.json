@@ -1,50 +1,18 @@
 [
 	{
-		"text": "for bad code",
-		"type": "WATCHING"
+		"text": "Cards Against Humanity",
+		"type": "PLAYING"
 	},
 	{
-		"text": "for good code",
-		"type": "WATCHING"
-	},
-	{
-		"text": "for decent code",
-		"type": "WATCHING"
-	},
-	{
-		"text": "my deps install 🔥",
-		"type": "WATCHING"
-	},
-	{
-		"text": "ESLint fail",
-		"type": "WATCHING"
-	},
-	{
-		"text": "a song about bad code",
-		"type": "LISTENING"
-	},
-	{
-		"text": "a song about good code",
-		"type": "LISTENING"
-	},
-	{
-		"text": "a song about decent code",
-		"type": "LISTENING"
+		"text": "Apples to Apples",
+		"type": "PLAYING"
 	},
 	{
 		"text": "you eat pant",
 		"type": "WATCHING"
 	},
 	{
-		"text": "noobs fail at code",
+		"text": "anime",
 		"type": "WATCHING"
-	},
-	{
-		"text": "with a linter",
-		"type": "PLAYING"
-	},
-	{
-		"text": "you type",
-		"type": "LISTENING"
 	}
 ]
