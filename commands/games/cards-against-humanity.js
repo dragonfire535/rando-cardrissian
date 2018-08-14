@@ -8,7 +8,7 @@ const { SUCCESS_EMOJI_ID, FAILURE_EMOJI_ID } = process.env;
 module.exports = class CardsAgainstHumanityCommand extends Command {
 	constructor() {
 		super('cards-against-humanity', {
-			aliases: ['cards-against-humanity', 'crude-cards', 'pretend-youre-xyzzy', 'cah', 'play'],
+			aliases: ['cards-against-humanity', 'crude-cards', 'pretend-youre-xyzzy', 'cah', 'play', 'start'],
 			category: 'games',
 			description: 'Compete to see who can come up with the best card to fill in the blank.',
 			channel: 'guild',
