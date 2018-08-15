@@ -69,13 +69,13 @@ module.exports = class Player {
 				if (choices.size < black.pick) {
 					chosen[chosen.indexOf('<Blank>')] = 'A randomly chosen blank card.';
 				} else {
-					const handled = await this.deck.handleBlank(this);
+					const handled = await deck.handleBlank(this);
 					chosen[chosen.indexOf('<Blank>')] = handled;
 				}
 			}
 			for (const card of chosen) this.hand.delete(card);
-			await this.user.send(`Nice! Return to ${channel} to await the results!`);
 			chosenCards.push({ id: this.id, cards: chosen });
+			await this.user.send(`Nice! Return to ${channel} to await the results!`);
 		} catch (err) {
 			return; // eslint-disable-line no-useless-return
 		}
