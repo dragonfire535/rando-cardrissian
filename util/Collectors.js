@@ -1,5 +1,5 @@
 const { stripIndents } = require('common-tags');
-const Player = require('./structures/Player');
+const Player = require('../structures/Player');
 const { SUCCESS_EMOJI_ID, FAILURE_EMOJI_ID } = process.env;
 
 module.exports = class CollectorsUtil {
