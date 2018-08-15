@@ -1,6 +1,4 @@
-const { SUCCESS_EMOJI_ID } = process.env;
-
-class Util {
+module.exports = class Util {
 	static shuffle(array) {
 		const arr = array.slice(0);
 		for (let i = arr.length - 1; i >= 0; i--) {
@@ -36,32 +34,4 @@ class Util {
 		if (mode === 'decode') return Buffer.from(text, 'base64').toString('utf8') || null;
 		throw new TypeError(`${mode} is not a supported base64 mode.`);
 	}
-
-	static async awaitPlayers(msg, max, min, { text = 'join game', time = 30000, dmCheck = false } = {}) {
-		const joined = [];
-		joined.push(msg.author.id);
-		const filter = res => {
-			if (res.author.bot) return false;
-			if (joined.includes(res.author.id)) return false;
-			if (res.content.toLowerCase() !== text.toLowerCase()) return false;
-			joined.push(res.author.id);
-			res.react(SUCCESS_EMOJI_ID || '✅').catch(() => null);
-			return true;
-		};
-		const verify = await msg.channel.awaitMessages(filter, { max, time });
-		verify.set(msg.id, msg);
-		if (dmCheck) {
-			for (const message of verify.values()) {
-				try {
-					await message.author.send('Hi! Just testing that DMs work, pay this no mind.');
-				} catch (err) {
-					verify.delete(message.id);
-				}
-			}
-		}
-		if (verify.size < min) return false;
-		return verify.map(message => message.author);
-	}
-}
-
-module.exports = Util;
+};
