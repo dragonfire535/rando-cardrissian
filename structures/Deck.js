@@ -1,4 +1,4 @@
-const { shuffle } = require('../../util/Util');
+const { shuffle } = require('../util/Util');
 
 module.exports = class Deck {
 	constructor(cards) {
