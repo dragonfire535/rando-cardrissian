@@ -81,7 +81,7 @@ module.exports = class CardsAgainstHumanityCommand extends Command {
 					Sending DMs...
 				`);
 				const chosenCards = [];
-				await Promise.all(players.map(player => player.turn(msg.channel, czar, black, blackDeck, chosenCards)));
+				await Promise.all(players.map(player => player.turn(msg.channel, czar, black, whiteDeck, chosenCards)));
 				if (!chosenCards.length) {
 					await msg.util.sendNew('Hmm... No one even tried.');
 					continue;

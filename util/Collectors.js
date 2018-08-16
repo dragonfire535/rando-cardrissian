@@ -63,7 +63,11 @@ module.exports = class CollectorsUtil {
 			return true;
 		});
 		collector.on('collect', msg => {
-			const board = players.sort((a, b) => b.points - a.points).map((player, i) => `**${i + 1}.** ${player.user.tag}`);
+			let i = 0;
+			const board = players.sort((a, b) => b.points - a.points).map(player => {
+				i++;
+				return `**${i}.** ${player.user.tag}`;
+			});
 			msg.reply(stripIndents`
 				**Leaderboard**:
 				${board.join('\n')}
