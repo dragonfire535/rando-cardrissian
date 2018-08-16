@@ -11,7 +11,7 @@ module.exports = class Player {
 	}
 
 	dealHand(deck, amount) {
-		for (let i = 0; i < amount; i++) this.hand.add(deck.deal());
+		for (let i = 0; i < amount; i++) this.hand.add(deck.draw());
 		return this.hand;
 	}
 
