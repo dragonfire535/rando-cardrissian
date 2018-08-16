@@ -66,7 +66,7 @@ module.exports = class CollectorsUtil {
 			let i = 0;
 			const board = players.sort((a, b) => b.points - a.points).map(player => {
 				i++;
-				return `**${i}.** ${player.user.tag}`;
+				return `**${i}.** ${player.user.tag} (${player.points})`;
 			});
 			msg.reply(stripIndents`
 				**Leaderboard**:
