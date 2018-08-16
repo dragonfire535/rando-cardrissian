@@ -29,7 +29,7 @@ module.exports = class CollectorsUtil {
 		return verify.map(message => message.author);
 	}
 
-	createJoinLeaveCollector(channel, players, czars, whiteDeck) {
+	static createJoinLeaveCollector(channel, players, czars, whiteDeck) {
 		const filter = res => {
 			if (res.author.bot) return false;
 			if (players.has(res.author.id) && res.content.toLowerCase() !== 'leave game') return false;
@@ -55,7 +55,7 @@ module.exports = class CollectorsUtil {
 		return collector;
 	}
 
-	createLeaderboardCollector(channel, players) {
+	static createLeaderboardCollector(channel, players) {
 		const collector = channel.createMessageCollector(res => {
 			if (res.author.bot) return false;
 			if (!players.has(res.author.id)) return false;
