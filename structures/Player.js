@@ -11,7 +11,12 @@ module.exports = class Player {
 	}
 
 	dealHand(deck, amount) {
-		for (let i = 0; i < amount; i++) this.hand.add(deck.draw());
+		if (amount <= 0) return this.hand;
+		if (amount > 1) {
+			for (let i = 0; i < amount; i++) this.hand.add(deck.draw());
+		} else {
+			this.hand.add(deck.draw());
+		}
 		return this.hand;
 	}
 
@@ -26,7 +31,7 @@ module.exports = class Player {
 
 	async turn(channel, czar, black, deck, chosenCards) {
 		if (this.user.id === czar.user.id) return;
-		this.dealHand(deck, 10 - this.hand.size);
+		if (this.hand.size < 10) this.dealHand(deck, 10 - this.hand.size);
 		try {
 			const hand = Array.from(this.hand);
 			await this.user.send(stripIndents`
