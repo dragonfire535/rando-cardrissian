@@ -62,6 +62,7 @@ module.exports = class CardsAgainstHumanityCommand extends Command {
 			let winner = null;
 			if (!noMidJoin) joinLeaveCollector = createJoinLeaveCollector(msg.channel, players, czars, whiteDeck);
 			if (!noLeaderboard) leaderboardCollector = createLeaderboardCollector(msg.channel, players);
+			let drawCount = 0;
 			while (!winner) {
 				czars.push(czars[0]);
 				czars.shift();
@@ -81,7 +82,9 @@ module.exports = class CardsAgainstHumanityCommand extends Command {
 					Sending DMs...
 				`);
 				const chosenCards = [];
-				await Promise.all(players.map(player => player.turn(msg.channel, czar, black, whiteDeck, chosenCards)));
+				await Promise.all(
+					players.map(player => player.turn(msg.channel, czar, black, whiteDeck, drawCount, chosenCards))
+				);
 				if (!chosenCards.length) {
 					await msg.util.sendNew('Hmm... No one even tried.');
 					continue;
@@ -111,6 +114,7 @@ module.exports = class CardsAgainstHumanityCommand extends Command {
 					players.get(czar.id).strikes++;
 					continue;
 				}
+				drawCount = black.pick;
 				const player = players.get(cards[Number.parseInt(chosen.first().content, 10) - 1].id);
 				if (!player) {
 					await msg.util.sendNew('Oh no, I think that player left! No points will be awarded...');

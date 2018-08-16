@@ -24,9 +24,9 @@ module.exports = class Player {
 		czars.splice(czars.indexOf(this.id), 1);
 	}
 
-	async turn(channel, czar, black, deck, chosenCards) {
+	async turn(channel, czar, black, deck, drawCount, chosenCards) {
 		if (this.user.id === czar.user.id) return;
-		if (this.hand.size < 10) this.hand.add(deck.draw());
+		this.dealHand(deck, drawCount);
 		try {
 			if (this.hand.size < black.pick) {
 				await this.user.send('You don\'t have enough cards!');

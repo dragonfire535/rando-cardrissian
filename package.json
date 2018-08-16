@@ -1,6 +1,6 @@
 {
 	"name": "cards-against-humanity",
-	"version": "2.0.1",
+	"version": "2.0.2",
 	"description": "Cards Against Humanity, but for Discord!",
 	"main": "CAH.js",
 	"scripts": {
