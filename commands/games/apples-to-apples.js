@@ -81,7 +81,7 @@ module.exports = class ApplesToApplesCommand extends Command {
 					Sending DMs...
 				`);
 				const chosenCards = [];
-				await Promise.all(players.map(player => player.turn(msg.channel, czar, green, redDeck, chosenCards)));
+				await Promise.all(players.map(player => player.turn(msg.channel, czar, green, redDeck, 1, chosenCards)));
 				if (!chosenCards.length) {
 					await msg.util.sendNew('Hmm... No one even tried.');
 					continue;
