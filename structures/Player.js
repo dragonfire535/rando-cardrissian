@@ -24,14 +24,10 @@ module.exports = class Player {
 		czars.splice(czars.indexOf(this.id), 1);
 	}
 
-	async turn(channel, czar, black, deck, drawCount, chosenCards) {
+	async turn(channel, czar, black, deck, chosenCards) {
 		if (this.user.id === czar.user.id) return;
-		if (this.hand.size < 10) this.dealHand(deck, drawCount);
+		this.dealHand(deck, 10 - this.hand.size);
 		try {
-			if (this.hand.size < black.pick) {
-				await this.user.send('You don\'t have enough cards!');
-				return;
-			}
 			const hand = Array.from(this.hand);
 			await this.user.send(stripIndents`
 				__**Your hand is**__: _(Type \`swap\` to exchange a point for a new hand.)_
