@@ -56,7 +56,7 @@ module.exports = class CardsAgainstHumanityCommand extends Command {
 			for (const user of awaitedPlayers) {
 				const player = new Player(user);
 				player.dealHand(whiteDeck, 10);
-				players.set(user.id, user);
+				players.set(player.id, player);
 			}
 			const czars = players.map(player => player.id);
 			let winner = null;
