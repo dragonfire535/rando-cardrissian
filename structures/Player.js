@@ -35,7 +35,10 @@ module.exports = class Player {
 		const hand = Array.from(this.hand);
 		if (this.user.bot) {
 			const chosen = [];
-			for (let i = 0; i < black.pick; i++) chosen.push(hand[Math.floor(Math.random() * hand.length)]);
+			for (let i = 0; i < black.pick; i++) {
+				const valid = hand.filter(card => !chosen.includes(card));
+				chosen.push(valid[Math.floor(Math.random() * valid.length)]);
+			}
 			if (chosen.includes('<Blank>')) {
 				const handled = await deck.handleBlank(this);
 				chosen[chosen.indexOf('<Blank>')] = handled;
