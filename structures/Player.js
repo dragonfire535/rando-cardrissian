@@ -36,7 +36,11 @@ module.exports = class Player {
 		if (this.user.bot) {
 			const chosen = [];
 			for (let i = 0; i < black.pick; i++) chosen.push(hand[Math.floor(Math.random() * hand.length)]);
-			if (chosen.includes('<Blank>')) chosen[chosen.indexOf('<Blank>')] = 'Rando Cardissian.';
+			if (chosen.includes('<Blank>')) {
+				const handled = await deck.handleBlank(this);
+				chosen[chosen.indexOf('<Blank>')] = handled;
+			}
+			for (const card of chosen) this.hand.delete(card);
 			chosenCards.push({ id: this.id, cards: chosen });
 			return;
 		}
