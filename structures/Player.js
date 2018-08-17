@@ -73,7 +73,10 @@ module.exports = class Player {
 				return this.turn(channel, czar, black, deck, chosenCards); // eslint-disable-line consistent-return
 			}
 			if (choices.size < black.pick) {
-				for (let i = 0; i < black.pick; i++) chosen.push(hand[Math.floor(Math.random() * hand.length)]);
+				for (let i = 0; i < black.pick; i++) {
+					const valid = hand.filter(card => !chosen.includes(card));
+					chosen.push(valid[Math.floor(Math.random() * valid.length)]);
+				}
 				this.strikes++;
 			}
 			if (chosen.includes('<Blank>')) {
