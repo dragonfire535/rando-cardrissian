@@ -37,7 +37,7 @@ module.exports = class Player {
 			const chosen = [];
 			for (let i = 0; i < black.pick; i++) chosen.push(hand[Math.floor(Math.random() * hand.length)]);
 			if (chosen.includes('<Blank>')) chosen[chosen.indexOf('<Blank>')] = 'Rando Cardissian.';
-			chosen.push({ id: this.id, cards: chosen });
+			chosenCards.push({ id: this.id, cards: chosen });
 			return;
 		}
 		try {
