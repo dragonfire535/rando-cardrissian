@@ -12,7 +12,8 @@ module.exports = class Player {
 
 	dealHand(deck) {
 		if (this.hand.size > 9) return this.hand;
-		for (let i = 0; i < 10 - this.hand.size; i++) this.hand.add(deck.draw());
+		const drawCount = 10 - this.hand.size;
+		for (let i = 0; i < drawCount; i++) this.hand.add(deck.draw());
 		return this.hand;
 	}
 
