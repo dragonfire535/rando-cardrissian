@@ -33,19 +33,26 @@ module.exports = class ApplesToApplesCommand extends Command {
 					id: 'noLeaderboard',
 					match: 'flag',
 					flag: ['--no-leaderboard', '-nl']
+				},
+				{
+					id: 'bot',
+					match: 'flag',
+					flag: ['--bot', '--rando', '-b']
 				}
 			]
 		});
 	}
 
-	async exec(msg, { maxPts, noMidJoin, noLeaderboard }) { // eslint-disable-line complexity
+	async exec(msg, { maxPts, noMidJoin, noLeaderboard, bot }) { // eslint-disable-line complexity
 		if (this.client.playing.has(msg.channel.id)) return msg.util.reply('Only one game may be occurring per channel.');
 		this.client.playing.add(msg.channel.id);
 		let joinLeaveCollector = null;
 		let leaderboardCollector = null;
 		try {
-			await msg.util.sendNew('You will need at least 2 more players, at maximum 10. To join, type `join game`.');
-			const awaitedPlayers = await awaitPlayers(msg, 10, 3);
+			await msg.util.sendNew(
+				`You will need at least ${bot ? 1 : 2} more player${bot ? '' : 's'}. To join, type \`join game\`.`
+			);
+			const awaitedPlayers = await awaitPlayers(msg, 10, bot ? 2 : 3);
 			if (!awaitedPlayers) {
 				this.client.playing.delete(msg.channel.id);
 				return msg.util.sendNew('Game could not be started...');
@@ -59,6 +66,11 @@ module.exports = class ApplesToApplesCommand extends Command {
 				players.set(player.id, player);
 			}
 			const czars = players.map(player => player.id);
+			if (bot) {
+				const player = new Player(this.client.user);
+				player.dealHand(redDeck, 10);
+				players.set(player.id, player);
+			}
 			let winner = null;
 			if (!noMidJoin) joinLeaveCollector = createJoinLeaveCollector(msg.channel, players, czars, redDeck);
 			if (!noLeaderboard) leaderboardCollector = createLeaderboardCollector(msg.channel, players);

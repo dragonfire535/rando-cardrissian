@@ -32,8 +32,15 @@ module.exports = class Player {
 	async turn(channel, czar, black, deck, chosenCards) {
 		if (this.user.id === czar.user.id) return;
 		this.dealHand(deck, 10 - this.hand.size);
+		const hand = Array.from(this.hand);
+		if (this.user.bot) {
+			const chosen = [];
+			for (let i = 0; i < black.pick; i++) chosen.push(hand[Math.floor(Math.random() * hand.length)]);
+			if (chosen.includes('<Blank>')) chosen[chosen.indexOf('<Blank>')] = 'Rando Cardissian.';
+			chosen.push({ id: this.id, cards: chosen });
+			return;
+		}
 		try {
-			const hand = Array.from(this.hand);
 			await this.user.send(stripIndents`
 				__**Your hand is**__: _(Type \`swap\` to exchange a point for a new hand.)_
 				${hand.map((card, i) => `**${i + 1}.** ${card}`).join('\n')}
