@@ -45,7 +45,7 @@ module.exports = class CollectorsUtil {
 		collector.on('collect', msg => {
 			if (msg.content.toLowerCase() === 'join game') {
 				const player = new Player(msg.author);
-				player.dealHand(whiteDeck, 10);
+				player.dealHand(whiteDeck);
 				players.set(player.id, player);
 				czars.push(player.id);
 			} else if (msg.content.toLowerCase() === 'leave game') {

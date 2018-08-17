@@ -10,13 +10,9 @@ module.exports = class Player {
 		this.strikes = 0;
 	}
 
-	dealHand(deck, amount) {
-		if (amount <= 0) return this.hand;
-		if (amount > 1) {
-			for (let i = 0; i < amount; i++) this.hand.add(deck.draw());
-		} else {
-			this.hand.add(deck.draw());
-		}
+	dealHand(deck) {
+		if (this.hand.size > 9) return this.hand;
+		for (let i = 0; i < 10 - this.hand.size; i++) this.hand.add(deck.draw());
 		return this.hand;
 	}
 
@@ -31,7 +27,7 @@ module.exports = class Player {
 
 	async turn(channel, czar, black, deck, chosenCards) {
 		if (this.user.id === czar.user.id) return;
-		this.dealHand(deck, 10 - this.hand.size);
+		this.dealHand(deck);
 		const hand = Array.from(this.hand);
 		if (this.user.bot) {
 			const chosen = [];
@@ -73,7 +69,7 @@ module.exports = class Player {
 				this.points--;
 				await this.user.send('Swapping cards...');
 				for (const card of this.hand) this.hand.delete(card);
-				this.dealHand(deck, 10);
+				this.dealHand(deck);
 				return this.turn(channel, czar, black, deck, chosenCards); // eslint-disable-line consistent-return
 			}
 			if (choices.size < black.pick) {

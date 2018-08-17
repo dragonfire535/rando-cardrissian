@@ -52,7 +52,7 @@ module.exports = class CardsAgainstHumanityCommand extends Command {
 			await msg.util.sendNew(
 				`You will need at least ${bot ? 1 : 2} more player${bot ? '' : 's'}. To join, type \`join game\`.`
 			);
-			const awaitedPlayers = await awaitPlayers(msg, 10, bot ? 2 : 3);
+			const awaitedPlayers = await awaitPlayers(msg, bot ? 9 : 10, bot ? 2 : 3);
 			if (!awaitedPlayers) {
 				this.client.playing.delete(msg.channel.id);
 				return msg.util.sendNew('Game could not be started...');
@@ -62,13 +62,13 @@ module.exports = class CardsAgainstHumanityCommand extends Command {
 			const players = new Collection();
 			for (const user of awaitedPlayers) {
 				const player = new Player(user);
-				player.dealHand(whiteDeck, 10);
+				player.dealHand(whiteDeck);
 				players.set(player.id, player);
 			}
 			const czars = players.map(player => player.id);
 			if (bot) {
 				const player = new Player(this.client.user);
-				player.dealHand(whiteDeck, 10);
+				player.dealHand(whiteDeck);
 				players.set(player.id, player);
 			}
 			let winner = null;
