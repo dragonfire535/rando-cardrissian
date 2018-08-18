@@ -82,7 +82,7 @@ module.exports = class Player {
 			}
 			if (chosen.length >= black.pick * (gambled ? 2 : 1)) collector.stop();
 		});
-		return new Promise(resolve => collector.once('end', async () => {
+		return new Promise(resolve => collector.once('end', () => {
 			if (chosen.length < black.pick * (gambled ? 2 : 1)) {
 				const count = black.pick - chosen.length;
 				for (let i = 0; i < count; i++) {
