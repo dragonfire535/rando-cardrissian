@@ -83,7 +83,6 @@ module.exports = class Player {
 				gambled = true;
 				return;
 			}
-			chosen.push(hand[Number.parseInt(msg.content, 10) - 1]);
 			if (chosen.length >= black.pick * (gambled ? 2 : 1)) collector.stop();
 		});
 		return new Promise(resolve => collector.once('end', async reason => {
