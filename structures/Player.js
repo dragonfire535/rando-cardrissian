@@ -57,7 +57,7 @@ module.exports = class Player {
 		await this.sendHand(hand, czar, black);
 		let gambled = false;
 		let swapped = false;
-		const collector = this.user.createMessageCollector(res => {
+		const collector = this.user.dmChannel.createMessageCollector(res => {
 			if (res.content.toLowerCase() === 'swap' && this.points > 0 && !swapped) return true;
 			if (res.content.toLowerCase() === 'gamble' && this.points > 0 && !gambled) return true;
 			const existing = hand[Number.parseInt(res.content, 10) - 1];
