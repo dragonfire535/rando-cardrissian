@@ -118,13 +118,16 @@ module.exports = class Player {
 
 	sendHand(hand, czar, black) {
 		return this.user.send(stripIndents`
-			__**Your hand is**__: _(Type \`swap\` to exchange a point for a new hand.)_
+			__**Your hand is**__:
 			${hand.map((card, i) => `**${i + 1}.** ${card}`).join('\n')}
 
 			**Black Card**: ${escapeMarkdown(black.text)}
 			**Card Czar**: ${czar.user.username}
+			**Your Points**: ${this.points}
+
 			Pick **${black.pick}** card${black.pick > 1 ? 's' : ''}!
 			_Type \`gamble\` to exchange a point for an extra play._
+			_Type \`swap\` to exchange a point for a new hand._
 		`);
 	}
 };
