@@ -32,7 +32,7 @@ module.exports = class Player {
 		try {
 			const extra = await this.chooseCards(czar, black, deck, chosenCards);
 			await this.user.send(`Nice! Return to ${channel} to await the results!`);
-			return
+			return extra;
 		} catch (err) {
 			return; // eslint-disable-line no-useless-return
 		}

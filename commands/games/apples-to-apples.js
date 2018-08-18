@@ -93,7 +93,10 @@ module.exports = class ApplesToApplesCommand extends Command {
 					Sending DMs...
 				`);
 				const chosenCards = [];
-				await Promise.all(players.map(player => player.turn(msg.channel, czar, green, redDeck, chosenCards)));
+				const turns = await Promise.all(
+					players.map(player => player.turn(msg.channel, czar, green, redDeck, chosenCards))
+				);
+				const extra = turns.reduce((a, b) => a + b);
 				if (!chosenCards.length) {
 					await msg.util.sendNew('Hmm... No one even tried.');
 					continue;
@@ -128,7 +131,7 @@ module.exports = class ApplesToApplesCommand extends Command {
 					await msg.util.sendNew('Oh no, I think that player left! No points will be awarded...');
 					continue;
 				}
-				++player.points;
+				player.points += 1 + extra;
 				if (player.points >= maxPts) {
 					winner = player.user;
 				} else {

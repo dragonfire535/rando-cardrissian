@@ -131,7 +131,7 @@ module.exports = class CardsAgainstHumanityCommand extends Command {
 					await msg.util.sendNew('Oh no, I think that player left! No points will be awarded...');
 					continue;
 				}
-				player.points += (1 + extra);
+				player.points += 1 + extra;
 				if (player.points >= maxPts) {
 					winner = player.user;
 				} else {
