@@ -30,7 +30,7 @@ module.exports = class CollectorsUtil {
 	}
 
 	static createJoinLeaveCollector(channel, players, czars, whiteDeck) {
-		const filter = res => {
+		const collector = channel.createMessageCollector(res => {
 			if (res.author.bot) return false;
 			if (players.has(res.author.id) && res.content.toLowerCase() !== 'leave game') return false;
 			if (czars[0] === res.author.id || players.size >= 10) {
@@ -40,8 +40,7 @@ module.exports = class CollectorsUtil {
 			if (!['join game', 'leave game'].includes(res.content.toLowerCase())) return false;
 			res.react(SUCCESS_EMOJI_ID || '✅').catch(() => null);
 			return true;
-		};
-		const collector = channel.createMessageCollector(filter);
+		});
 		collector.on('collect', msg => {
 			if (msg.content.toLowerCase() === 'join game') {
 				const player = new Player(msg.author);
