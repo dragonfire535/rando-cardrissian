@@ -27,14 +27,14 @@ module.exports = class Player {
 	}
 
 	async turn(channel, czar, black, deck, chosenCards) {
-		if (this.user.id === czar.user.id) return;
+		if (this.user.id === czar.user.id) return 0;
 		this.dealHand(deck);
 		try {
 			const extra = await this.chooseCards(czar, black, deck, chosenCards);
 			await this.user.send(`Nice! Return to ${channel} to await the results!`);
 			return extra;
 		} catch (err) {
-			return; // eslint-disable-line no-useless-return
+			return 0;
 		}
 	}
 
