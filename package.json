@@ -1,16 +1,16 @@
 {
-	"name": "cards-against-humanity",
+	"name": "rando-cardrissian",
 	"version": "2.2.0",
 	"description": "Cards Against Humanity, but for Discord!",
-	"main": "CAH.js",
+	"main": "Rando.js",
 	"scripts": {
 		"test": "npm run lint",
 		"lint": "eslint . --ext .js --ext .json",
-		"start": "node CAH.js"
+		"start": "node Rando.js"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/dragonfire535/discord-cards-against-humanity.git"
+		"url": "git+https://github.com/dragonfire535/rando-cardrissian.git"
 	},
 	"keywords": [
 		"bot",
@@ -24,9 +24,9 @@
 	"author": "dragonfire535 <danielbodendahl@gmail.com>",
 	"license": "GPL-3.0",
 	"bugs": {
-		"url": "https://github.com/dragonfire535/discord-cards-against-humanity/issues"
+		"url": "https://github.com/dragonfire535/rando-cardrissian/issues"
 	},
-	"homepage": "https://github.com/dragonfire535/discord-cards-against-humanity#readme",
+	"homepage": "https://github.com/dragonfire535/rando-cardrissian#readme",
 	"engines": {
 		"node": ">=10.1.0"
 	},

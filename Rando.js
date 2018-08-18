@@ -1,7 +1,7 @@
-const { CAH_TOKEN, CAH_PREFIX, OWNERS, INVITE } = process.env;
+const { RANDO_TOKEN, RANDO_PREFIX, OWNERS, INVITE } = process.env;
 const Client = require('./structures/Client');
 const client = new Client({
-	prefix: CAH_PREFIX.split('||'),
+	prefix: RANDO_PREFIX.split('||'),
 	ownerID: OWNERS.split(','),
 	disableEveryone: true,
 	disabledEvents: ['TYPING_START']
@@ -37,7 +37,7 @@ client.commandHandler.on('error', (err, msg) => {
 	`).catch(() => null);
 });
 
-client.login(CAH_TOKEN);
+client.login(RANDO_TOKEN);
 
 process.on('unhandledRejection', err => {
 	console.error('[FATAL] Unhandled Promise Rejection.', err);
