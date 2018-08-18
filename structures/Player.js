@@ -30,8 +30,9 @@ module.exports = class Player {
 		if (this.user.id === czar.user.id) return;
 		this.dealHand(deck);
 		try {
-			await this.chooseCards(czar, black, deck, chosenCards);
+			const extra = await this.chooseCards(czar, black, deck, chosenCards);
 			await this.user.send(`Nice! Return to ${channel} to await the results!`);
+			return
 		} catch (err) {
 			return; // eslint-disable-line no-useless-return
 		}
@@ -87,7 +88,7 @@ module.exports = class Player {
 		});
 		return new Promise(resolve => collector.once('end', async () => {
 			if (chosen.length < black.pick * (gambled ? 2 : 1)) {
-				const count = chosen.length - black.pick;
+				const count = black.pick - chosen.length;
 				for (let i = 0; i < count; i++) {
 					const valid = hand.filter(card => !chosen.includes(card));
 					chosen.push(valid[Math.floor(Math.random() * valid.length)]);
@@ -106,7 +107,7 @@ module.exports = class Player {
 			} else {
 				chosenCards.push({ id: this.id, cards: chosen });
 			}
-			return resolve(chosenCards);
+			return resolve(gambled ? 1 : 0);
 		}));
 	}
 
