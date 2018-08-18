@@ -17,16 +17,4 @@ module.exports = class Deck {
 		this.deck = shuffle(this.cards);
 		return this.deck;
 	}
-
-	async handleBlank(player) {
-		player.hand.delete('<Blank>');
-		if (player.user.bot) return 'Rando Cardissian.';
-		await player.user.send('What do you want the blank card to say? Must be 100 or less characters.');
-		const blank = await player.user.dmChannel.awaitMessages(res => res.content.length <= 100, {
-			max: 1,
-			time: 60000
-		});
-		if (!blank.size) return `A blank card ${player.user.tag} forgot to fill out.`;
-		return blank.first().content;
-	}
 };

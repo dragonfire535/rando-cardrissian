@@ -46,10 +46,6 @@ module.exports = class Player {
 				const valid = hand.filter(card => !chosen.includes(card));
 				chosen.push(valid[Math.floor(Math.random() * valid.length)]);
 			}
-			if (chosen.includes('<Blank>')) {
-				const handled = await deck.handleBlank(this);
-				chosen[chosen.indexOf('<Blank>')] = handled;
-			}
 			for (const card of chosen) this.hand.delete(card);
 			chosenCards.push({ id: this.id, cards: chosen });
 			return null;
@@ -94,10 +90,6 @@ module.exports = class Player {
 					chosen.push(valid[Math.floor(Math.random() * valid.length)]);
 				}
 				this.strikes++;
-			}
-			if (chosen.includes('<Blank>')) {
-				const handled = await deck.handleBlank(this);
-				chosen[chosen.indexOf('<Blank>')] = handled;
 			}
 			for (const card of chosen) this.hand.delete(card);
 			if (gambled) {
