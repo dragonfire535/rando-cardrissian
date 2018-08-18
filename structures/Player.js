@@ -86,8 +86,9 @@ module.exports = class Player {
 			if (chosen.length >= black.pick * (gambled ? 2 : 1)) collector.stop();
 		});
 		return new Promise(resolve => collector.once('end', async reason => {
-			if (reason === 'time' && chosen.length < black.pick) {
-				for (let i = 0; i < black.pick; i++) {
+			if (chosen.length < black.pick * (gambled ? 2 : 1)) {
+				const count = chosen.length - black.pick;
+				for (let i = 0; i < count; i++) {
 					const valid = hand.filter(card => !chosen.includes(card));
 					chosen.push(valid[Math.floor(Math.random() * valid.length)]);
 				}
@@ -99,15 +100,11 @@ module.exports = class Player {
 			}
 			if (gambled) {
 				const first = chosen.splice(0, chosen.length / 2);
-				if (first.length >= black.pick) {
-					for (const card of first) this.hand.delete(card);
-					chosenCards.push({ id: this.id, cards: first });
-				}
+				for (const card of first) this.hand.delete(card);
+				chosenCards.push({ id: this.id, cards: first });
 				const second = chosen.splice(chosen.length / 2, chosen.length);
-				if (second.length >= black.pick) {
-					for (const card of second) this.hand.delete(card);
-					chosenCards.push({ id: this.id, cards: second });
-				}
+				for (const card of second) this.hand.delete(card);
+				chosenCards.push({ id: this.id, cards: second });
 			} else {
 				for (const card of chosen) this.hand.delete(card);
 				chosenCards.push({ id: this.id, cards: chosen });
