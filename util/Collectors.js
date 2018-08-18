@@ -63,8 +63,16 @@ module.exports = class CollectorsUtil {
 		});
 		collector.on('collect', msg => {
 			let i = 0;
+			let previousPts = null;
+			let positionsMoved = 1;
 			const board = players.sort((a, b) => b.points - a.points).map(player => {
-				i++;
+				if (previousPts === player.points) {
+					positionsMoved++;
+				} else {
+					i += positionsMoved;
+					positionsMoved = 1;
+				}
+				previousPts = player.points;
 				return `**${i}.** ${player.user.tag} (${player.points})`;
 			});
 			msg.reply(stripIndents`
