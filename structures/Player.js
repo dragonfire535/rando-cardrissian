@@ -98,15 +98,12 @@ module.exports = class Player {
 				const handled = await deck.handleBlank(this);
 				chosen[chosen.indexOf('<Blank>')] = handled;
 			}
+			for (const card of chosen) this.hand.delete(card);
 			if (gambled) {
 				const first = chosen.splice(0, chosen.length / 2);
-				for (const card of first) this.hand.delete(card);
 				chosenCards.push({ id: this.id, cards: first });
-				const second = chosen.splice(chosen.length / 2, chosen.length);
-				for (const card of second) this.hand.delete(card);
-				chosenCards.push({ id: this.id, cards: second });
+				chosenCards.push({ id: this.id, cards: chosen });
 			} else {
-				for (const card of chosen) this.hand.delete(card);
 				chosenCards.push({ id: this.id, cards: chosen });
 			}
 			return resolve(chosenCards);
