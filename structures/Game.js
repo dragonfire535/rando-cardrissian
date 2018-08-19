@@ -78,7 +78,8 @@ module.exports = class Game {
 			if (msg.content.toLowerCase() === 'join game') this.addUser(msg.author);
 			else if (msg.content.toLowerCase() === 'leave game') this.kick(this.players.get(msg.author.id));
 		});
-		return collector;
+		this.joinLeaveCollector = collector;
+		return this.joinLeaveCollector;
 	}
 
 	stopJoinLeaveCollector() {
