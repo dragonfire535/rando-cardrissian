@@ -11,10 +11,10 @@ module.exports = class Player {
 		this.strikes = 0;
 	}
 
-	dealHand(deck) {
+	dealHand() {
 		if (this.hand.size > 9) return this.hand;
 		const drawCount = 10 - this.hand.size;
-		for (let i = 0; i < drawCount; i++) this.hand.add(deck.draw());
+		for (let i = 0; i < drawCount; i++) this.hand.add(this.game.whiteDeck.draw());
 		return this.hand;
 	}
 
