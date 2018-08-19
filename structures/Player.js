@@ -2,7 +2,8 @@ const { stripIndents } = require('common-tags');
 const { escapeMarkdown } = require('discord.js');
 
 module.exports = class Player {
-	constructor(user) {
+	constructor(game, user) {
+		this.game = game;
 		this.id = user.id;
 		this.user = user;
 		this.points = 0;
@@ -21,24 +22,19 @@ module.exports = class Player {
 		return this.strikes >= 3;
 	}
 
-	kick(players, czars) {
-		players.delete(this.id);
-		czars.splice(czars.indexOf(this.id), 1);
-	}
-
-	async turn(channel, czar, black, deck, chosenCards) {
-		if (this.user.id === czar.user.id) return 0;
-		this.dealHand(deck);
+	async turn(black, chosenCards) {
+		if (this.user.id === this.game.czar.user.id) return 0;
+		this.dealHand();
 		try {
-			const extra = await this.chooseCards(czar, black, deck, chosenCards);
-			await this.user.send(`Nice! Return to ${channel} to await the results!`);
+			const extra = await this.chooseCards(black, chosenCards);
+			await this.user.send(`Nice! Return to ${this.game.channel} to await the results!`);
 			return extra;
 		} catch (err) {
 			return 0;
 		}
 	}
 
-	async chooseCards(czar, black, deck, chosenCards) {
+	async chooseCards(black, chosenCards) {
 		let hand = Array.from(this.hand);
 		if (this.user.bot) {
 			const chosen = [];
@@ -51,7 +47,7 @@ module.exports = class Player {
 			return null;
 		}
 		const chosen = [];
-		await this.sendHand(hand, czar, black);
+		await this.sendHand(hand, black);
 		let gambled = false;
 		let swapped = false;
 		const collector = this.user.dmChannel.createMessageCollector(res => {
@@ -67,11 +63,11 @@ module.exports = class Player {
 			if (msg.content.toLowerCase() === 'swap') {
 				await this.user.send('Swapping cards...');
 				for (const card of this.hand) this.hand.delete(card);
-				this.dealHand(deck);
+				this.dealHand();
 				hand = Array.from(this.hand);
 				this.points--;
 				swapped = true;
-				await this.sendHand(hand, czar, black);
+				await this.sendHand(hand, black);
 				return;
 			}
 			if (msg.content.toLowerCase() === 'gamble') {
@@ -103,13 +99,13 @@ module.exports = class Player {
 		}));
 	}
 
-	sendHand(hand, czar, black) {
+	sendHand(hand, black) {
 		return this.user.send(stripIndents`
 			__**Your hand is**__:
 			${hand.map((card, i) => `**${i + 1}.** ${card}`).join('\n')}
 
-			**Black Card**: ${escapeMarkdown(black.text)}
-			**Card Czar**: ${czar.user.username}
+			**${this.game.blackType} Card**: ${escapeMarkdown(black.text)}
+			**Card Czar**: ${this.game.czar.user.username}
 			**Awesome Points**: ${this.points}
 
 			Pick **${black.pick}** card${black.pick > 1 ? 's' : ''}!

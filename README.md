@@ -11,7 +11,7 @@ Rando Cardrissian is a Discord bot coded in JavaScript with
 [Akairo](https://github.com/1Computer1/discord-akairo) command framework. The
 primary feature is Cards Against Humanity, but Apples to Apples is also available.
 
-## Commands (10)
+## Commands (11)
 ### Utility:
 
 * **changelog**: Responds with the bot's latest 10 commits.
@@ -30,6 +30,7 @@ primary feature is Cards Against Humanity, but Apples to Apples is also availabl
 ### Other:
 
 * **hi**: Hello.
+* **leaderboard**: Displays the current leaderboard for this channel's game.
 
 ## Licensing
 The bot is licensed under the GPL 3.0 license. See the file `LICENSE` for more

@@ -33,7 +33,7 @@ module.exports = class Client extends AkairoClient {
 				stopWord: 'finish'
 			}
 		});
-		this.playing = new Set();
+		this.games = new Map();
 	}
 
 	setup() {
