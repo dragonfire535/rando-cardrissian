@@ -76,7 +76,7 @@ module.exports = class CardsAgainstHumanityCommand extends Command {
 					${czar.user}, which card${black.pick > 1 ? 's' : ''} do you pick?
 					**Black Card**: ${escapeMarkdown(black.text)}
 
-					${cards.map((card, i) => `**${i + 1}.** ${card.cards.join(', ')}`).join('\n')}
+					${cards.map((card, i) => `**${i + 1}.** ${card.cards.join(' | ')}`).join('\n')}
 				`);
 				const filter = res => {
 					if (res.author.id !== czar.user.id) return false;

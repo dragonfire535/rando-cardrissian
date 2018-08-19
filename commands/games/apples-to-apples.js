@@ -76,7 +76,7 @@ module.exports = class ApplesToApplesCommand extends Command {
 					${czar.user}, which card${green.pick > 1 ? 's' : ''} do you pick?
 					**Green Card**: ${escapeMarkdown(green.text)}
 
-					${cards.map((card, i) => `**${i + 1}.** ${card.cards.join(', ')}`).join('\n')}
+					${cards.map((card, i) => `**${i + 1}.** ${card.cards.join(' | ')}`).join('\n')}
 				`);
 				const filter = res => {
 					if (res.author.id !== czar.user.id) return false;
