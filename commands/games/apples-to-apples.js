@@ -83,7 +83,7 @@ module.exports = class ApplesToApplesCommand extends Command {
 				const green = greenDeck.draw();
 				await msg.util.sendNew(stripIndents`
 					The card czar will be ${czar.user}!
-					The Green Card is: **${escapeMarkdown(green)}**
+					The Green Card is: **${escapeMarkdown(green.text)}**
 
 					Sending DMs...
 				`);
@@ -98,8 +98,8 @@ module.exports = class ApplesToApplesCommand extends Command {
 				}
 				const cards = shuffle(chosenCards);
 				await msg.util.sendNew(stripIndents`
-					${czar.user}, which card do you pick?
-					**Green Card**: ${escapeMarkdown(green)}
+					${czar.user}, which card${green.pick > 1 ? 's' : ''} do you pick?
+					**Green Card**: ${escapeMarkdown(green.text)}
 
 					${cards.map((card, i) => `**${i + 1}.** ${card.cards.join(', ')}`).join('\n')}
 				`);
