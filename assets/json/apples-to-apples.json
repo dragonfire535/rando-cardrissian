@@ -1,254 +1,1001 @@
 {
 	"greenCards": [
-		"Absurd (ridiculous, senseless, foolish)",
-		"Addictive (obsessive, consuming, captivating)",
-		"Adorable (lovable, charming, delightful)",
-		"Aged (old, ancient, mature)",
-		"American (U.S. Citizen, Yankee, Apple Pie)",
-		"Ancient (elderly, old, antique)",
-		"Animated (lively, exuberant, spirited)",
-		"Annoying (irritating, bothersome, teasing)",
-		"Appetizing (appealing, tasty, flavorful)",
-		"Arrogant (egotistical, overconfident, conceited)",
-		"Awesome (amazing, remarkable, majestic)",
-		"Awkward (clumsy, bumbling, uncoordinated)",
-		"Believable (trustworthy, credible, convincing)",
-		"Bogus (fraudulent, phony, insincere)",
-		"Boisterous (loud, rambunctious, rowdy)",
-		"Bold (daring, brave, courageous)",
-		"Boring (dull, tedious, monotonous)",
-		"Bright (brilliant, radiant, shiny)",
-		"Brilliant (dazzling, gleaming, intelligent)",
-		"Busy (occupied, meddlesome, engrossed)",
-		"Calm (peaceful, tranquil, placid)",
-		"Casual (easygoing, blase, nonchalant)",
-		"Charismatic (alluring, magnetic, charming)",
-		"Charming (captivating, enchanting, fascinating)",
-		"Cheesy (trashy, tawdry, far-fetched)",
-		"Chewy (gummy, rubbery, stringy)",
-		"Chunky (lumpy, chubby, bumpy)",
-		"Classic (timeless, definitive, vintage)",
-		"Clean (washed, pure, tidy)",
-		"Clueless (unaware, oblivious, ignorant)",
-		"Cold (chilly, icy, aloof)",
-		"Colorful (vivid, brilliant, kaleidoscopic)",
-		"Comfortable (cozy, snug, restful)",
-		"Comical (funny, hilarious, amusing)",
-		"Complicated (difficult, complex, involved)",
-		"Confused (muddled, bewildered, perplexed)",
-		"Cool (chilly, hip, cold-blooded)",
-		"Corrupt (dishonest, underhanded, shady)",
-		"Cosmic (limitless, planetary, far out)",
-		"Cosmopolitan (sophisticated, urbane, well-informed)",
-		"Courageous (brave, gallant, dauntless)",
-		"Cowardly (fearful, afraid, spineless)",
-		"Cranky (crabby, cantankerous, grouchy)",
-		"Crazed (insane, wild, deranged)",
-		"Crazy (insane, bizarre, wacky)",
-		"Creative (imaginative, artistic, original)",
-		"Creepy (frightening, slithering, scary)",
-		"Cruel (mean, harsh, merciless)",
-		"Cuddly (loving, tender, huggable)",
-		"Cute (pretty, perky, delightful)",
-		"Dainty (delicate, fragile, thin)",
-		"Dangerous (risky, chancy, hazardous)",
-		"Dead (deceased, expired, unresponsive)",
-		"Deadly (fatal, lethal, murderous)",
-		"Delicate (dainty, tender, elegant)",
-		"Delicious (tasty, pleasing, appetizing)",
-		"Delightful (pleasing, enjoyable, charming)",
-		"Demanding (difficult, exacting, bothersome)",
-		"Depressing (dismal, gloomy, sad)",
-		"Desperate (frantic, headlong, reckless)",
-		"Dignified (stately, honorable, distinguished)",
-		"Dirty (unclean, soiled, impure)",
-		"Distinguished (dignified, extraordinary, acclaimed)",
-		"Disturbing (unsettling, troubling, worrisome)",
-		"Dramatic (exciting, sensational, theatrical)",
-		"Dreamy (fanciful, whimsical, heavenly)",
-		"Dull (boring, stupid, blunt)",
-		"Dysfunctional (impaired, damaged, maladjusted)",
-		"Earthy (unrefined, natural, crude)",
-		"Easy (effortless, gentle, promiscuous)",
-		"Eccentric (peculiar, odd, bizarre)",
-		"Elitist (snobbish, arrogant, smug)",
-		"Emotional (passionate, moving, volatile)",
-		"Eternal (timeless, immortal, perpetual)",
-		"European (of Europe, from Europe, about Europe)",
-		"Exciting (thrilling, breathtaking, arousing)",
-		"Exhausting (weakening, tiring, draining)",
-		"Expensive (costly, valuable, exorbitant)",
-		"Explosive (bursting, blasting, dangerous)",
-		"Exquisite (excellent, refined, flawless)",
-		"Extreme (exceptional, superlative, radical)",
-		"Fabulous (marvelous, wonderful, incredible)",
-		"Fake (unreal, counterfeit, deceptive)",
-		"Fancy (showy, ornate, decorated)",
-		"Fantastic (awesome, outrageous, imaginary)",
-		"Feminine (womanly, ladylike, unmanly)",
-		"Filthy (dirty, foul, unclean)",
-		"Flirtatious (brazen, saucy, forward)",
-		"Foreign (alien, unfamiliar, exotic)",
-		"Fragrant (aromatic, odorous, perfumed)",
-		"Frazzled (exhausted, frayed, worn)",
-		"Fresh (new, original, good)",
-		"Friendly (affectionate, comforting, welcoming)",
-		"Frightening (scary, horrifying, awesome)",
-		"Frivolous (trivial, silly, shallow)",
-		"Funky (groovy, psychedelic, hip)",
-		"Funny (amusing, comic, odd)",
-		"Furious (angry, raging, wild)",
-		"Fuzzy (downy, unclear, furry)",
-		"Glamorous (beautiful, dazzling, stylish)",
-		"Glitzy (flashy, showy, gaudy)",
-		"Global (world-wide, spherical, universal)",
-		"Glorious (magnificent, delightful, splendid)",
-		"Goody-Goody (sweet, well-behaved, virtuous)",
-		"Graceful (elegant, supple, limber)",
-		"Handsome (attractive, elegant, fine)",
-		"Hardworking (industrious, diligent, busy)",
-		"Harmful (hurtful, unhealthy, damaging)",
-		"Haunting (unforgettable, bewitching, unearthly)",
-		"Healthy (hearty, robust, wholesome)",
-		"Heartless (insensitive, cruel, uncaring)",
-		"Hilarious (funny, witty, amusing)",
-		"Honorable (honest, just, virtuous)",
-		"Hopeless (pessimistic, desperate, downhearted)",
-		"Horrifying (offensive, abominable, disgusting)",
-		"Hostile (antagonistic, aggressive, warlike)",
-		"Hot (blazing, heated, spicy)",
-		"Idiotic (foolish, dumb, moronic)",
-		"Important (significant, substantial, momentous)",
-		"Industrious (diligent, busy, hard-working)",
-		"Influential (powerful, prominent, important)",
-		"Innocent (guiltless, pure, naive)",
-		"Insane (psychotic, deranged, mad)",
-		"Inspirational (exhilarating, inspiring, stimulating)",
-		"Insulting (offending, discourteous, rude)",
-		"Intelligent (bright, smart, brainy)",
-		"Intense (extreme, passionate, strained)",
-		"Irresistible (overpowering, overwhelming, compelling)",
-		"Irritating (annoying, troublesome, provoking)",
-		"Juicy (drippy, luscious, tantalizing)",
-		"Lazy (lifeless, apathetic, weary)",
-		"Legendary (famous, distinctive, prominent)",
-		"Loud (noisy, boisterous, deafening)",
-		"Lovable (adorable, endearing, cuddly)",
-		"Lucky (fortunate, serendipitous, favored)",
-		"Luscious (delicious, savory, juicy)",
-		"Luxurious (opulent, lavish, sumptuous)",
-		"Magical (enchanting, miraculous, marvelous)",
-		"Manly (masculine, virile, strong)",
-		"Masculine (male, manly, virile)",
-		"Meek (shy, mild, timid)",
-		"Melodramatic (theatrical, sensational, showy)",
-		"Mischievous (naughty, prankish, sly)",
-		"Miserable (wretched, pitiful, forlorn)",
-		"Misunderstood (not grasped, not learned, not absorbed)",
-		"Mysterious (secretive, puzzling, strange)",
-		"Mystical (spiritual, secretive, esoteric)",
-		"Naive (unsophisticated, childlike, simple)",
-		"Nasty (mean, inclement, offensive)",
-		"Natural (pure, simple, unadorned)",
-		"Neat (tidy, orderly, cool)",
-		"Neglected (ignored, disregarded, rejected)",
-		"Nerdy (unhip, uncool, dorky)",
-		"Normal (usual, common, ordinary)",
-		"Obnoxious (offensive, repulsive, annoying)",
-		"Odd (different, eccentric, bizarre)",
-		"Offensive (insulting, vulgar, attacking)",
-		"Ordinary (usual, common, plain)",
-		"Organic (natural, clean, biological)",
-		"Outrageous (shocking, scandalous, disgraceful)",
-		"Overwhelming (exhaustive, breathtaking, monumental)",
-		"Painful (hurtful, agonizing, unbearable)",
-		"Pathetic (pitiful, distressing, heart-rending)",
-		"Patriotic (nationalistic, loyal, public-spirited)",
-		"Peaceful (serene, restful, calm)",
-		"Perfect (faultless, consummate, exact)",
-		"Philosophical (thoughtful, contemplative, wise)",
-		"Phony (false, artificial, imitation)",
-		"Playful (fun, frisky, entertaining)",
-		"Popular (well-liked, accepted, preferred)",
-		"Powerful (strong, forceful, robust)",
-		"Primitive (prehistoric, primal, uncivilized)",
-		"Principled (conscientious, ethical, scrupulous)",
-		"Profound (deep, wise, thoughtful)",
-		"Puffy (swollen, billowy, bloated)",
-		"Pure (innocent, unadulterated, chaste)",
-		"Quiet (peaceful, silent, calm)",
-		"Radiant (shining, glowing, sparkling)",
-		"Radical (unconventional, revolutionary, extreme)",
-		"Rare (scarce, unusual, half-cooked)",
-		"Realistic (authentic, lifelike, reasonable)",
-		"Refined (well-bred, purified, cultivated)",
-		"Refreshing (brisk, invigorating, rejuvenating)",
-		"Relaxing (restful, calming, peaceful)",
-		"Repulsive (disgusting, offensive, foul)",
-		"Responsible (accountable, obligated, mature)",
-		"Revolutionary (innovative, rebellious, radical)",
-		"Rich (wealthy, affluent, moneyed)",
-		"Ridiculous (preposterous, absurd, ludicrous)",
-		"Risky (hazardous, daring, speculative)",
-		"Rough (scratchy, uneven, jagged)",
-		"Saintly (virtuous, angelic, divine)",
-		"Sappy (gooey, mushy, romantic)",
-		"Scary (frightening, absurd, ugly)",
-		"Scenic (picturesque, dramatic, panoramic)",
-		"Selfish (stingy, greedy, miserly)",
-		"Senseless (meaningless, absurd, foolish)",
-		"Sensitive (susceptible, sympathetic, tender)",
-		"Sensual (tactile, pleasing, sexual)",
-		"Sexy (arousing, appealing, seductive)",
-		"Shallow (superficial, trivial, not deep)",
-		"Sharp (pointed, keen, acute)",
-		"Shiny (reflective, gleaming, polished)",
-		"Shocking (frightening, electrifying, startling)",
-		"Shy (bashful, timid, cautious)",
-		"Silly (goofy, absurd, nonsensical)",
-		"Smart (intelligent, stylish, witty)",
-		"Smelly (stinky, odorous, rank)",
-		"Smooth (even, level, flat)",
-		"Snappy (stylish, trendy, fast)",
-		"Soft (malleable, pliable, mushy)",
-		"Speedy (quick, rapid, fast)",
-		"Spicy (flavorable, tangy, hot)",
-		"Spiritual (religious, inspired, supernatural)",
-		"Spooky (scary, weird, ghostly)",
-		"Spunky (perky, lively, spirited)",
-		"Squeaky Clean (pure, immaculate, unapproachable)",
-		"Stereotyped (pigeonholed, caricatured, characterized)",
-		"Stunning (astonishing, staggering, astounding)",
-		"Sultry (sweltering, humid, sensual)",
-		"Sweet (sugary, caring, good)",
-		"Swift (quick, speedy, expeditious)",
-		"Talented (gifted, clever, skillful)",
-		"Tame (subdued, gentle, trained)",
-		"Technological (scientific, futuristic, mechanical)",
-		"Temperamental (moody, irritable, short-tempered)",
-		"Timeless (classic, ageless, well-established)",
-		"Touchy-Feely (affectionate, tactile, huggy)",
-		"Tough (strong, firm, difficult)",
-		"Trustworthy (honest, reliable, unfailing)",
-		"Twisted (distorted, warped, perverted)",
-		"Unbelievable (incredible, far-fetched, impossible)",
-		"Unforgettable (notable, impressive, remarkable)",
-		"Unhealthy (risky, sickly, dangerous)",
-		"Unnatural (abnormal, artificial, bizarre)",
-		"Unreal (imaginary, illusionary, unbelievable)",
-		"Unscrupulous (unethical, corrupt, unprincipled)",
-		"Unusual (rare, odd, uncommon)",
-		"Useless (worthless, ineffective, unneeded)",
-		"Violent (furious, vicious, destructive)",
-		"Virtuous (worthy, righteous, chaste)",
-		"Visionary (idealistic, prophetic, far-seeing)",
-		"Weird (abnormal, peculiar, odd)",
-		"Wicked (evil, corrupt, depraved)",
-		"Wild (untamed, savage, ferocious)",
-		"Witty (clever, humorous, cunning)",
-		"Woebegone (dismal, sorrowful, bummed out)",
-		"Worldly (experienced, sophisticated, materialistic)",
-		"Zany (crazy, funny, wacky)"
+		{
+			"pick": 1,
+			"text": "Absurd (ridiculous, senseless, foolish)"
+		},
+		{
+			"pick": 1,
+			"text": "Addictive (obsessive, consuming, captivating)"
+		},
+		{
+			"pick": 1,
+			"text": "Adorable (lovable, charming, delightful)"
+		},
+		{
+			"pick": 1,
+			"text": "Aged (old, ancient, mature)"
+		},
+		{
+			"pick": 1,
+			"text": "American (U.S. Citizen, Yankee, Apple Pie)"
+		},
+		{
+			"pick": 1,
+			"text": "Ancient (elderly, old, antique)"
+		},
+		{
+			"pick": 1,
+			"text": "Animated (lively, exuberant, spirited)"
+		},
+		{
+			"pick": 1,
+			"text": "Annoying (irritating, bothersome, teasing)"
+		},
+		{
+			"pick": 1,
+			"text": "Appetizing (appealing, tasty, flavorful)"
+		},
+		{
+			"pick": 1,
+			"text": "Arrogant (egotistical, overconfident, conceited)"
+		},
+		{
+			"pick": 1,
+			"text": "Awesome (amazing, remarkable, majestic)"
+		},
+		{
+			"pick": 1,
+			"text": "Awkward (clumsy, bumbling, uncoordinated)"
+		},
+		{
+			"pick": 1,
+			"text": "Believable (trustworthy, credible, convincing)"
+		},
+		{
+			"pick": 1,
+			"text": "Bogus (fraudulent, phony, insincere)"
+		},
+		{
+			"pick": 1,
+			"text": "Boisterous (loud, rambunctious, rowdy)"
+		},
+		{
+			"pick": 1,
+			"text": "Bold (daring, brave, courageous)"
+		},
+		{
+			"pick": 1,
+			"text": "Boring (dull, tedious, monotonous)"
+		},
+		{
+			"pick": 1,
+			"text": "Bright (brilliant, radiant, shiny)"
+		},
+		{
+			"pick": 1,
+			"text": "Brilliant (dazzling, gleaming, intelligent)"
+		},
+		{
+			"pick": 1,
+			"text": "Busy (occupied, meddlesome, engrossed)"
+		},
+		{
+			"pick": 1,
+			"text": "Calm (peaceful, tranquil, placid)"
+		},
+		{
+			"pick": 1,
+			"text": "Casual (easygoing, blase, nonchalant)"
+		},
+		{
+			"pick": 1,
+			"text": "Charismatic (alluring, magnetic, charming)"
+		},
+		{
+			"pick": 1,
+			"text": "Charming (captivating, enchanting, fascinating)"
+		},
+		{
+			"pick": 1,
+			"text": "Cheesy (trashy, tawdry, far-fetched)"
+		},
+		{
+			"pick": 1,
+			"text": "Chewy (gummy, rubbery, stringy)"
+		},
+		{
+			"pick": 1,
+			"text": "Chunky (lumpy, chubby, bumpy)"
+		},
+		{
+			"pick": 1,
+			"text": "Classic (timeless, definitive, vintage)"
+		},
+		{
+			"pick": 1,
+			"text": "Clean (washed, pure, tidy)"
+		},
+		{
+			"pick": 1,
+			"text": "Clueless (unaware, oblivious, ignorant)"
+		},
+		{
+			"pick": 1,
+			"text": "Cold (chilly, icy, aloof)"
+		},
+		{
+			"pick": 1,
+			"text": "Colorful (vivid, brilliant, kaleidoscopic)"
+		},
+		{
+			"pick": 1,
+			"text": "Comfortable (cozy, snug, restful)"
+		},
+		{
+			"pick": 1,
+			"text": "Comical (funny, hilarious, amusing)"
+		},
+		{
+			"pick": 1,
+			"text": "Complicated (difficult, complex, involved)"
+		},
+		{
+			"pick": 1,
+			"text": "Confused (muddled, bewildered, perplexed)"
+		},
+		{
+			"pick": 1,
+			"text": "Cool (chilly, hip, cold-blooded)"
+		},
+		{
+			"pick": 1,
+			"text": "Corrupt (dishonest, underhanded, shady)"
+		},
+		{
+			"pick": 1,
+			"text": "Cosmic (limitless, planetary, far out)"
+		},
+		{
+			"pick": 1,
+			"text": "Cosmopolitan (sophisticated, urbane, well-informed)"
+		},
+		{
+			"pick": 1,
+			"text": "Courageous (brave, gallant, dauntless)"
+		},
+		{
+			"pick": 1,
+			"text": "Cowardly (fearful, afraid, spineless)"
+		},
+		{
+			"pick": 1,
+			"text": "Cranky (crabby, cantankerous, grouchy)"
+		},
+		{
+			"pick": 1,
+			"text": "Crazed (insane, wild, deranged)"
+		},
+		{
+			"pick": 1,
+			"text": "Crazy (insane, bizarre, wacky)"
+		},
+		{
+			"pick": 1,
+			"text": "Creative (imaginative, artistic, original)"
+		},
+		{
+			"pick": 1,
+			"text": "Creepy (frightening, slithering, scary)"
+		},
+		{
+			"pick": 1,
+			"text": "Cruel (mean, harsh, merciless)"
+		},
+		{
+			"pick": 1,
+			"text": "Cuddly (loving, tender, huggable)"
+		},
+		{
+			"pick": 1,
+			"text": "Cute (pretty, perky, delightful)"
+		},
+		{
+			"pick": 1,
+			"text": "Dainty (delicate, fragile, thin)"
+		},
+		{
+			"pick": 1,
+			"text": "Dangerous (risky, chancy, hazardous)"
+		},
+		{
+			"pick": 1,
+			"text": "Dead (deceased, expired, unresponsive)"
+		},
+		{
+			"pick": 1,
+			"text": "Deadly (fatal, lethal, murderous)"
+		},
+		{
+			"pick": 1,
+			"text": "Delicate (dainty, tender, elegant)"
+		},
+		{
+			"pick": 1,
+			"text": "Delicious (tasty, pleasing, appetizing)"
+		},
+		{
+			"pick": 1,
+			"text": "Delightful (pleasing, enjoyable, charming)"
+		},
+		{
+			"pick": 1,
+			"text": "Demanding (difficult, exacting, bothersome)"
+		},
+		{
+			"pick": 1,
+			"text": "Depressing (dismal, gloomy, sad)"
+		},
+		{
+			"pick": 1,
+			"text": "Desperate (frantic, headlong, reckless)"
+		},
+		{
+			"pick": 1,
+			"text": "Dignified (stately, honorable, distinguished)"
+		},
+		{
+			"pick": 1,
+			"text": "Dirty (unclean, soiled, impure)"
+		},
+		{
+			"pick": 1,
+			"text": "Distinguished (dignified, extraordinary, acclaimed)"
+		},
+		{
+			"pick": 1,
+			"text": "Disturbing (unsettling, troubling, worrisome)"
+		},
+		{
+			"pick": 1,
+			"text": "Dramatic (exciting, sensational, theatrical)"
+		},
+		{
+			"pick": 1,
+			"text": "Dreamy (fanciful, whimsical, heavenly)"
+		},
+		{
+			"pick": 1,
+			"text": "Dull (boring, stupid, blunt)"
+		},
+		{
+			"pick": 1,
+			"text": "Dysfunctional (impaired, damaged, maladjusted)"
+		},
+		{
+			"pick": 1,
+			"text": "Earthy (unrefined, natural, crude)"
+		},
+		{
+			"pick": 1,
+			"text": "Easy (effortless, gentle, promiscuous)"
+		},
+		{
+			"pick": 1,
+			"text": "Eccentric (peculiar, odd, bizarre)"
+		},
+		{
+			"pick": 1,
+			"text": "Elitist (snobbish, arrogant, smug)"
+		},
+		{
+			"pick": 1,
+			"text": "Emotional (passionate, moving, volatile)"
+		},
+		{
+			"pick": 1,
+			"text": "Eternal (timeless, immortal, perpetual)"
+		},
+		{
+			"pick": 1,
+			"text": "European (of Europe, from Europe, about Europe)"
+		},
+		{
+			"pick": 1,
+			"text": "Exciting (thrilling, breathtaking, arousing)"
+		},
+		{
+			"pick": 1,
+			"text": "Exhausting (weakening, tiring, draining)"
+		},
+		{
+			"pick": 1,
+			"text": "Expensive (costly, valuable, exorbitant)"
+		},
+		{
+			"pick": 1,
+			"text": "Explosive (bursting, blasting, dangerous)"
+		},
+		{
+			"pick": 1,
+			"text": "Exquisite (excellent, refined, flawless)"
+		},
+		{
+			"pick": 1,
+			"text": "Extreme (exceptional, superlative, radical)"
+		},
+		{
+			"pick": 1,
+			"text": "Fabulous (marvelous, wonderful, incredible)"
+		},
+		{
+			"pick": 1,
+			"text": "Fake (unreal, counterfeit, deceptive)"
+		},
+		{
+			"pick": 1,
+			"text": "Fancy (showy, ornate, decorated)"
+		},
+		{
+			"pick": 1,
+			"text": "Fantastic (awesome, outrageous, imaginary)"
+		},
+		{
+			"pick": 1,
+			"text": "Feminine (womanly, ladylike, unmanly)"
+		},
+		{
+			"pick": 1,
+			"text": "Filthy (dirty, foul, unclean)"
+		},
+		{
+			"pick": 1,
+			"text": "Flirtatious (brazen, saucy, forward)"
+		},
+		{
+			"pick": 1,
+			"text": "Foreign (alien, unfamiliar, exotic)"
+		},
+		{
+			"pick": 1,
+			"text": "Fragrant (aromatic, odorous, perfumed)"
+		},
+		{
+			"pick": 1,
+			"text": "Frazzled (exhausted, frayed, worn)"
+		},
+		{
+			"pick": 1,
+			"text": "Fresh (new, original, good)"
+		},
+		{
+			"pick": 1,
+			"text": "Friendly (affectionate, comforting, welcoming)"
+		},
+		{
+			"pick": 1,
+			"text": "Frightening (scary, horrifying, awesome)"
+		},
+		{
+			"pick": 1,
+			"text": "Frivolous (trivial, silly, shallow)"
+		},
+		{
+			"pick": 1,
+			"text": "Funky (groovy, psychedelic, hip)"
+		},
+		{
+			"pick": 1,
+			"text": "Funny (amusing, comic, odd)"
+		},
+		{
+			"pick": 1,
+			"text": "Furious (angry, raging, wild)"
+		},
+		{
+			"pick": 1,
+			"text": "Fuzzy (downy, unclear, furry)"
+		},
+		{
+			"pick": 1,
+			"text": "Glamorous (beautiful, dazzling, stylish)"
+		},
+		{
+			"pick": 1,
+			"text": "Glitzy (flashy, showy, gaudy)"
+		},
+		{
+			"pick": 1,
+			"text": "Global (world-wide, spherical, universal)"
+		},
+		{
+			"pick": 1,
+			"text": "Glorious (magnificent, delightful, splendid)"
+		},
+		{
+			"pick": 1,
+			"text": "Goody-Goody (sweet, well-behaved, virtuous)"
+		},
+		{
+			"pick": 1,
+			"text": "Graceful (elegant, supple, limber)"
+		},
+		{
+			"pick": 1,
+			"text": "Handsome (attractive, elegant, fine)"
+		},
+		{
+			"pick": 1,
+			"text": "Hardworking (industrious, diligent, busy)"
+		},
+		{
+			"pick": 1,
+			"text": "Harmful (hurtful, unhealthy, damaging)"
+		},
+		{
+			"pick": 1,
+			"text": "Haunting (unforgettable, bewitching, unearthly)"
+		},
+		{
+			"pick": 1,
+			"text": "Healthy (hearty, robust, wholesome)"
+		},
+		{
+			"pick": 1,
+			"text": "Heartless (insensitive, cruel, uncaring)"
+		},
+		{
+			"pick": 1,
+			"text": "Hilarious (funny, witty, amusing)"
+		},
+		{
+			"pick": 1,
+			"text": "Honorable (honest, just, virtuous)"
+		},
+		{
+			"pick": 1,
+			"text": "Hopeless (pessimistic, desperate, downhearted)"
+		},
+		{
+			"pick": 1,
+			"text": "Horrifying (offensive, abominable, disgusting)"
+		},
+		{
+			"pick": 1,
+			"text": "Hostile (antagonistic, aggressive, warlike)"
+		},
+		{
+			"pick": 1,
+			"text": "Hot (blazing, heated, spicy)"
+		},
+		{
+			"pick": 1,
+			"text": "Idiotic (foolish, dumb, moronic)"
+		},
+		{
+			"pick": 1,
+			"text": "Important (significant, substantial, momentous)"
+		},
+		{
+			"pick": 1,
+			"text": "Industrious (diligent, busy, hard-working)"
+		},
+		{
+			"pick": 1,
+			"text": "Influential (powerful, prominent, important)"
+		},
+		{
+			"pick": 1,
+			"text": "Innocent (guiltless, pure, naive)"
+		},
+		{
+			"pick": 1,
+			"text": "Insane (psychotic, deranged, mad)"
+		},
+		{
+			"pick": 1,
+			"text": "Inspirational (exhilarating, inspiring, stimulating)"
+		},
+		{
+			"pick": 1,
+			"text": "Insulting (offending, discourteous, rude)"
+		},
+		{
+			"pick": 1,
+			"text": "Intelligent (bright, smart, brainy)"
+		},
+		{
+			"pick": 1,
+			"text": "Intense (extreme, passionate, strained)"
+		},
+		{
+			"pick": 1,
+			"text": "Irresistible (overpowering, overwhelming, compelling)"
+		},
+		{
+			"pick": 1,
+			"text": "Irritating (annoying, troublesome, provoking)"
+		},
+		{
+			"pick": 1,
+			"text": "Juicy (drippy, luscious, tantalizing)"
+		},
+		{
+			"pick": 1,
+			"text": "Lazy (lifeless, apathetic, weary)"
+		},
+		{
+			"pick": 1,
+			"text": "Legendary (famous, distinctive, prominent)"
+		},
+		{
+			"pick": 1,
+			"text": "Loud (noisy, boisterous, deafening)"
+		},
+		{
+			"pick": 1,
+			"text": "Lovable (adorable, endearing, cuddly)"
+		},
+		{
+			"pick": 1,
+			"text": "Lucky (fortunate, serendipitous, favored)"
+		},
+		{
+			"pick": 1,
+			"text": "Luscious (delicious, savory, juicy)"
+		},
+		{
+			"pick": 1,
+			"text": "Luxurious (opulent, lavish, sumptuous)"
+		},
+		{
+			"pick": 1,
+			"text": "Magical (enchanting, miraculous, marvelous)"
+		},
+		{
+			"pick": 1,
+			"text": "Manly (masculine, virile, strong)"
+		},
+		{
+			"pick": 1,
+			"text": "Masculine (male, manly, virile)"
+		},
+		{
+			"pick": 1,
+			"text": "Meek (shy, mild, timid)"
+		},
+		{
+			"pick": 1,
+			"text": "Melodramatic (theatrical, sensational, showy)"
+		},
+		{
+			"pick": 1,
+			"text": "Mischievous (naughty, prankish, sly)"
+		},
+		{
+			"pick": 1,
+			"text": "Miserable (wretched, pitiful, forlorn)"
+		},
+		{
+			"pick": 1,
+			"text": "Misunderstood (not grasped, not learned, not absorbed)"
+		},
+		{
+			"pick": 1,
+			"text": "Mysterious (secretive, puzzling, strange)"
+		},
+		{
+			"pick": 1,
+			"text": "Mystical (spiritual, secretive, esoteric)"
+		},
+		{
+			"pick": 1,
+			"text": "Naive (unsophisticated, childlike, simple)"
+		},
+		{
+			"pick": 1,
+			"text": "Nasty (mean, inclement, offensive)"
+		},
+		{
+			"pick": 1,
+			"text": "Natural (pure, simple, unadorned)"
+		},
+		{
+			"pick": 1,
+			"text": "Neat (tidy, orderly, cool)"
+		},
+		{
+			"pick": 1,
+			"text": "Neglected (ignored, disregarded, rejected)"
+		},
+		{
+			"pick": 1,
+			"text": "Nerdy (unhip, uncool, dorky)"
+		},
+		{
+			"pick": 1,
+			"text": "Normal (usual, common, ordinary)"
+		},
+		{
+			"pick": 1,
+			"text": "Obnoxious (offensive, repulsive, annoying)"
+		},
+		{
+			"pick": 1,
+			"text": "Odd (different, eccentric, bizarre)"
+		},
+		{
+			"pick": 1,
+			"text": "Offensive (insulting, vulgar, attacking)"
+		},
+		{
+			"pick": 1,
+			"text": "Ordinary (usual, common, plain)"
+		},
+		{
+			"pick": 1,
+			"text": "Organic (natural, clean, biological)"
+		},
+		{
+			"pick": 1,
+			"text": "Outrageous (shocking, scandalous, disgraceful)"
+		},
+		{
+			"pick": 1,
+			"text": "Overwhelming (exhaustive, breathtaking, monumental)"
+		},
+		{
+			"pick": 1,
+			"text": "Painful (hurtful, agonizing, unbearable)"
+		},
+		{
+			"pick": 1,
+			"text": "Pathetic (pitiful, distressing, heart-rending)"
+		},
+		{
+			"pick": 1,
+			"text": "Patriotic (nationalistic, loyal, public-spirited)"
+		},
+		{
+			"pick": 1,
+			"text": "Peaceful (serene, restful, calm)"
+		},
+		{
+			"pick": 1,
+			"text": "Perfect (faultless, consummate, exact)"
+		},
+		{
+			"pick": 1,
+			"text": "Philosophical (thoughtful, contemplative, wise)"
+		},
+		{
+			"pick": 1,
+			"text": "Phony (false, artificial, imitation)"
+		},
+		{
+			"pick": 1,
+			"text": "Playful (fun, frisky, entertaining)"
+		},
+		{
+			"pick": 1,
+			"text": "Popular (well-liked, accepted, preferred)"
+		},
+		{
+			"pick": 1,
+			"text": "Powerful (strong, forceful, robust)"
+		},
+		{
+			"pick": 1,
+			"text": "Primitive (prehistoric, primal, uncivilized)"
+		},
+		{
+			"pick": 1,
+			"text": "Principled (conscientious, ethical, scrupulous)"
+		},
+		{
+			"pick": 1,
+			"text": "Profound (deep, wise, thoughtful)"
+		},
+		{
+			"pick": 1,
+			"text": "Puffy (swollen, billowy, bloated)"
+		},
+		{
+			"pick": 1,
+			"text": "Pure (innocent, unadulterated, chaste)"
+		},
+		{
+			"pick": 1,
+			"text": "Quiet (peaceful, silent, calm)"
+		},
+		{
+			"pick": 1,
+			"text": "Radiant (shining, glowing, sparkling)"
+		},
+		{
+			"pick": 1,
+			"text": "Radical (unconventional, revolutionary, extreme)"
+		},
+		{
+			"pick": 1,
+			"text": "Rare (scarce, unusual, half-cooked)"
+		},
+		{
+			"pick": 1,
+			"text": "Realistic (authentic, lifelike, reasonable)"
+		},
+		{
+			"pick": 1,
+			"text": "Refined (well-bred, purified, cultivated)"
+		},
+		{
+			"pick": 1,
+			"text": "Refreshing (brisk, invigorating, rejuvenating)"
+		},
+		{
+			"pick": 1,
+			"text": "Relaxing (restful, calming, peaceful)"
+		},
+		{
+			"pick": 1,
+			"text": "Repulsive (disgusting, offensive, foul)"
+		},
+		{
+			"pick": 1,
+			"text": "Responsible (accountable, obligated, mature)"
+		},
+		{
+			"pick": 1,
+			"text": "Revolutionary (innovative, rebellious, radical)"
+		},
+		{
+			"pick": 1,
+			"text": "Rich (wealthy, affluent, moneyed)"
+		},
+		{
+			"pick": 1,
+			"text": "Ridiculous (preposterous, absurd, ludicrous)"
+		},
+		{
+			"pick": 1,
+			"text": "Risky (hazardous, daring, speculative)"
+		},
+		{
+			"pick": 1,
+			"text": "Rough (scratchy, uneven, jagged)"
+		},
+		{
+			"pick": 1,
+			"text": "Saintly (virtuous, angelic, divine)"
+		},
+		{
+			"pick": 1,
+			"text": "Sappy (gooey, mushy, romantic)"
+		},
+		{
+			"pick": 1,
+			"text": "Scary (frightening, absurd, ugly)"
+		},
+		{
+			"pick": 1,
+			"text": "Scenic (picturesque, dramatic, panoramic)"
+		},
+		{
+			"pick": 1,
+			"text": "Selfish (stingy, greedy, miserly)"
+		},
+		{
+			"pick": 1,
+			"text": "Senseless (meaningless, absurd, foolish)"
+		},
+		{
+			"pick": 1,
+			"text": "Sensitive (susceptible, sympathetic, tender)"
+		},
+		{
+			"pick": 1,
+			"text": "Sensual (tactile, pleasing, sexual)"
+		},
+		{
+			"pick": 1,
+			"text": "Sexy (arousing, appealing, seductive)"
+		},
+		{
+			"pick": 1,
+			"text": "Shallow (superficial, trivial, not deep)"
+		},
+		{
+			"pick": 1,
+			"text": "Sharp (pointed, keen, acute)"
+		},
+		{
+			"pick": 1,
+			"text": "Shiny (reflective, gleaming, polished)"
+		},
+		{
+			"pick": 1,
+			"text": "Shocking (frightening, electrifying, startling)"
+		},
+		{
+			"pick": 1,
+			"text": "Shy (bashful, timid, cautious)"
+		},
+		{
+			"pick": 1,
+			"text": "Silly (goofy, absurd, nonsensical)"
+		},
+		{
+			"pick": 1,
+			"text": "Smart (intelligent, stylish, witty)"
+		},
+		{
+			"pick": 1,
+			"text": "Smelly (stinky, odorous, rank)"
+		},
+		{
+			"pick": 1,
+			"text": "Smooth (even, level, flat)"
+		},
+		{
+			"pick": 1,
+			"text": "Snappy (stylish, trendy, fast)"
+		},
+		{
+			"pick": 1,
+			"text": "Soft (malleable, pliable, mushy)"
+		},
+		{
+			"pick": 1,
+			"text": "Speedy (quick, rapid, fast)"
+		},
+		{
+			"pick": 1,
+			"text": "Spicy (flavorable, tangy, hot)"
+		},
+		{
+			"pick": 1,
+			"text": "Spiritual (religious, inspired, supernatural)"
+		},
+		{
+			"pick": 1,
+			"text": "Spooky (scary, weird, ghostly)"
+		},
+		{
+			"pick": 1,
+			"text": "Spunky (perky, lively, spirited)"
+		},
+		{
+			"pick": 1,
+			"text": "Squeaky Clean (pure, immaculate, unapproachable)"
+		},
+		{
+			"pick": 1,
+			"text": "Stereotyped (pigeonholed, caricatured, characterized)"
+		},
+		{
+			"pick": 1,
+			"text": "Stunning (astonishing, staggering, astounding)"
+		},
+		{
+			"pick": 1,
+			"text": "Sultry (sweltering, humid, sensual)"
+		},
+		{
+			"pick": 1,
+			"text": "Sweet (sugary, caring, good)"
+		},
+		{
+			"pick": 1,
+			"text": "Swift (quick, speedy, expeditious)"
+		},
+		{
+			"pick": 1,
+			"text": "Talented (gifted, clever, skillful)"
+		},
+		{
+			"pick": 1,
+			"text": "Tame (subdued, gentle, trained)"
+		},
+		{
+			"pick": 1,
+			"text": "Technological (scientific, futuristic, mechanical)"
+		},
+		{
+			"pick": 1,
+			"text": "Temperamental (moody, irritable, short-tempered)"
+		},
+		{
+			"pick": 1,
+			"text": "Timeless (classic, ageless, well-established)"
+		},
+		{
+			"pick": 1,
+			"text": "Touchy-Feely (affectionate, tactile, huggy)"
+		},
+		{
+			"pick": 1,
+			"text": "Tough (strong, firm, difficult)"
+		},
+		{
+			"pick": 1,
+			"text": "Trustworthy (honest, reliable, unfailing)"
+		},
+		{
+			"pick": 1,
+			"text": "Twisted (distorted, warped, perverted)"
+		},
+		{
+			"pick": 1,
+			"text": "Unbelievable (incredible, far-fetched, impossible)"
+		},
+		{
+			"pick": 1,
+			"text": "Unforgettable (notable, impressive, remarkable)"
+		},
+		{
+			"pick": 1,
+			"text": "Unhealthy (risky, sickly, dangerous)"
+		},
+		{
+			"pick": 1,
+			"text": "Unnatural (abnormal, artificial, bizarre)"
+		},
+		{
+			"pick": 1,
+			"text": "Unreal (imaginary, illusionary, unbelievable)"
+		},
+		{
+			"pick": 1,
+			"text": "Unscrupulous (unethical, corrupt, unprincipled)"
+		},
+		{
+			"pick": 1,
+			"text": "Unusual (rare, odd, uncommon)"
+		},
+		{
+			"pick": 1,
+			"text": "Useless (worthless, ineffective, unneeded)"
+		},
+		{
+			"pick": 1,
+			"text": "Violent (furious, vicious, destructive)"
+		},
+		{
+			"pick": 1,
+			"text": "Virtuous (worthy, righteous, chaste)"
+		},
+		{
+			"pick": 1,
+			"text": "Visionary (idealistic, prophetic, far-seeing)"
+		},
+		{
+			"pick": 1,
+			"text": "Weird (abnormal, peculiar, odd)"
+		},
+		{
+			"pick": 1,
+			"text": "Wicked (evil, corrupt, depraved)"
+		},
+		{
+			"pick": 1,
+			"text": "Wild (untamed, savage, ferocious)"
+		},
+		{
+			"pick": 1,
+			"text": "Witty (clever, humorous, cunning)"
+		},
+		{
+			"pick": 1,
+			"text": "Woebegone (dismal, sorrowful, bummed out)"
+		},
+		{
+			"pick": 1,
+			"text": "Worldly (experienced, sophisticated, materialistic)"
+		},
+		{
+			"pick": 1,
+			"text": "Zany (crazy, funny, wacky)"
+		}
 	],
 	"redCards": [
 		"A Bad Haircut",
