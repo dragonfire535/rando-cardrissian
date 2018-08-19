@@ -19,8 +19,8 @@ module.exports = class CardsAgainstHumanityCommand extends Command {
 				{
 					id: 'maxPts',
 					prompt: {
-						start: 'What amount of points should determine the winner?',
-						retry: 'You provided an invalid points maximum. Please try again.'
+						start: 'What amount of awesome points should determine the winner?',
+						retry: 'You provided an invalid awesome points maximum. Please try again.'
 					},
 					type: Argument.range('integer', 1, 20, true)
 				},
@@ -28,11 +28,6 @@ module.exports = class CardsAgainstHumanityCommand extends Command {
 					id: 'noMidJoin',
 					match: 'flag',
 					flag: ['--no-mid-join', '-nmj']
-				},
-				{
-					id: 'noLeaderboard',
-					match: 'flag',
-					flag: ['--no-leaderboard', '-nl']
 				},
 				{
 					id: 'bot',
@@ -43,7 +38,7 @@ module.exports = class CardsAgainstHumanityCommand extends Command {
 		});
 	}
 
-	async exec(msg, { maxPts, noMidJoin, noLeaderboard, bot }) { // eslint-disable-line complexity
+	async exec(msg, { maxPts, noMidJoin, bot }) { // eslint-disable-line complexity
 		if (this.client.playing.has(msg.channel.id)) return msg.util.reply('Only one game may be occurring per channel.');
 		this.client.playing.add(msg.channel.id);
 		let joinLeaveCollector = null;
@@ -73,7 +68,7 @@ module.exports = class CardsAgainstHumanityCommand extends Command {
 			}
 			let winner = null;
 			if (!noMidJoin) joinLeaveCollector = createJoinLeaveCollector(msg.channel, players, czars, whiteDeck);
-			if (!noLeaderboard) leaderboardCollector = createLeaderboardCollector(msg.channel, players);
+			leaderboardCollector = createLeaderboardCollector(msg.channel, players);
 			while (!winner) {
 				czars.push(czars[0]);
 				czars.shift();
@@ -128,7 +123,7 @@ module.exports = class CardsAgainstHumanityCommand extends Command {
 				}
 				const player = players.get(cards[Number.parseInt(chosen.first().content, 10) - 1].id);
 				if (!player) {
-					await msg.util.sendNew('Oh no, I think that player left! No points will be awarded...');
+					await msg.util.sendNew('Oh no, I think that player left! No awesome points will be awarded...');
 					continue;
 				}
 				player.points += 1 + extra;
@@ -136,7 +131,7 @@ module.exports = class CardsAgainstHumanityCommand extends Command {
 					winner = player.user;
 				} else {
 					const addS = player.points > 1 ? 's' : '';
-					await msg.util.sendNew(`Nice, ${player.user}! You now have **${player.points}** point${addS}!`);
+					await msg.util.sendNew(`Nice, ${player.user}! You now have **${player.points}** awesome point${addS}!`);
 				}
 			}
 			if (joinLeaveCollector) joinLeaveCollector.stop();

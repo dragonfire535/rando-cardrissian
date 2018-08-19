@@ -3,7 +3,7 @@ const Player = require('../structures/Player');
 const { SUCCESS_EMOJI_ID, FAILURE_EMOJI_ID } = process.env;
 
 module.exports = class CollectorsUtil {
-	static async awaitPlayers(msg, max, min, { text = 'join game', time = 30000, dmCheck = false } = {}) {
+	static async awaitPlayers(msg, max, min, { text = 'join game', time = 30000 } = {}) {
 		const joined = [];
 		joined.push(msg.author.id);
 		const filter = res => {
@@ -16,15 +16,6 @@ module.exports = class CollectorsUtil {
 		};
 		const verify = await msg.channel.awaitMessages(filter, { max, time });
 		verify.set(msg.id, msg);
-		if (dmCheck) {
-			for (const message of verify.values()) {
-				try {
-					await message.author.send('Hi! Just testing that DMs work, pay this no mind.');
-				} catch (err) {
-					verify.delete(message.id);
-				}
-			}
-		}
 		if (verify.size < min) return false;
 		return verify.map(message => message.author);
 	}
@@ -75,8 +66,8 @@ module.exports = class CollectorsUtil {
 				previousPts = player.points;
 				return `**${i}.** ${player.user.tag} (${player.points})`;
 			});
-			msg.reply(stripIndents`
-				**Leaderboard**:
+			msg.channel.send(stripIndents`
+				__**Leaderboard**__:
 				${board.join('\n')}
 			`).catch(() => null);
 		});
