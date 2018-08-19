@@ -50,6 +50,7 @@ module.exports = class CardsAgainstHumanityCommand extends Command {
 			while (!game.winner) {
 				const czar = game.changeCzar();
 				for (const player of game.players) {
+					if (player.id === czar.id) continue;
 					if (player.kickable) game.kick(player);
 				}
 				if (game.players.size < 3) {
