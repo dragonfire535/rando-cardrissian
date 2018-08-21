@@ -5,7 +5,7 @@ module.exports = class DeckListCommand extends Command {
 	constructor() {
 		super('deck-list', {
 			aliases: ['deck-list', 'decks'],
-			category: 'other',
+			category: 'info',
 			description: 'Responds with a list of all decks, with query.',
 			args: [
 				{

@@ -6,7 +6,7 @@ module.exports = class DeckInfoCommand extends Command {
 	constructor() {
 		super('deck-info', {
 			aliases: ['deck-info', 'deck'],
-			category: 'other',
+			category: 'info',
 			description: 'Responds with detailed information on a deck.',
 			args: [
 				{
