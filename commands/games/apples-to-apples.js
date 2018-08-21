@@ -49,7 +49,7 @@ module.exports = class ApplesToApplesCommand extends Command {
 			if (!noMidJoin) game.createJoinLeaveCollector(msg.channel, game);
 			while (!game.winner) {
 				const czar = game.changeCzar();
-				for (const player of game.players) {
+				for (const player of game.players.values()) {
 					if (player.id === czar.id) continue;
 					if (player.kickable) game.kick(player);
 				}
