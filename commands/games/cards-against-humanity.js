@@ -37,7 +37,7 @@ module.exports = class CardsAgainstHumanityCommand extends Command {
 
 	async exec(msg, { maxPts, bot, blacklist }) {
 		if (this.client.games.has(msg.channel.id)) return msg.util.reply('Only one game may be occurring per channel.');
-		const { blackCards, whiteCards } = this.client.decks.generate(blacklist.split(',') || []);
+		const { blackCards, whiteCards } = this.client.decks.generate(blacklist ? blacklist.split(',') : []);
 		this.client.games.set(msg.channel.id, new Game(msg.channel, whiteCards, blackCards, 'Black'));
 		const game = this.client.games.get(msg.channel.id);
 		try {
