@@ -1,6 +1,7 @@
 const { AkairoClient, CommandHandler } = require('discord-akairo');
 const { stripIndents } = require('common-tags');
 const path = require('path');
+const DeckManager = require('./DeckManager');
 const CodeType = require('../types/code');
 
 module.exports = class Client extends AkairoClient {
@@ -34,10 +35,12 @@ module.exports = class Client extends AkairoClient {
 			}
 		});
 		this.games = new Map();
+		this.decks = new DeckManager();
 	}
 
 	setup() {
 		this.commandHandler.loadAll();
 		this.commandHandler.resolver.addType('code', CodeType);
+		this.decks.register(path.join(__dirname, '..', 'assets', 'json', 'decks'));
 	}
 };

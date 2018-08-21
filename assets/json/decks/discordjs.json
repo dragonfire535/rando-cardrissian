@@ -1,0 +1,61 @@
+{
+	"name": "Discord.js Pack",
+	"id": "discordjs",
+	"official": false,
+	"blackCards": [
+		{
+			"pick": 1,
+			"text": "What will finally make hydrabolt release Discord.js v12?"
+		},
+		{
+			"pick": 1,
+			"text": "With the banning of matmen, the Discord.js server celebrated by _."
+		},
+		{
+			"pick": 1,
+			"text": "Discord.js is so overrated, I'd rather use _."
+		},
+		{
+			"pick": 1,
+			"text": "If the new Discord.js version doesn't allow me to _, I'll literally jump off a bridge."
+		},
+		{
+			"pick": 1,
+			"text": "Finally! I can send _ to Discord!"
+		},
+		{
+			"pick": 1,
+			"text": "That moment when you realize Discord is just Skype but with _."
+		}
+	],
+	"whiteCards": [
+		"Discord.",
+		"The forever delayed release of Discord.js v12.",
+		"A noob who thinks their if/else message handler is a bot framework.",
+		"A meme pinging of b1nzy that results in a deleted account.",
+		"Selfbots that respond to every message with \"Pong!\".",
+		"hydrabolt.",
+		"Nomsy.",
+		"Crawl.",
+		"The banning of matmen.",
+		"A new version of Discord.js that breaks everything.",
+		"Another month-long break for hydrabolt.",
+		"Another toxic statement from Recchan.",
+		"Yet another Gus code screenshot.",
+		"Finally transferring Discord.js away from hydrabolt.",
+		"Another dumb ban appeal from an entitled 12-year-old.",
+		"A useless bot the server doesn't need but can't live without. Like this bot.",
+		"A noob who thinks Java and JavaScript are the same thing.",
+		"A fork of Commando that's actually customizable.",
+		"Kyra complaining about yet another performance issue.",
+		"The ability to send HTML to Discord.",
+		"The realization that Discord actually isn't better than Skype or TeamSpeak.",
+		"Another ban from Crawl with the reason \"annoying\".",
+		"Another white-named pleb asking to be in this card deck.",
+		"Cursing on my Christian Discord server.",
+		"Drah falling for a bait from Crawl. Again.",
+		"Naming every single user in the server hydrabolt and then complaining about spam.",
+		"Discord e-couples who stay in a call while they sleep so they can \"sleep together\".",
+		"Aister's lewd manga collection."
+	]
+}

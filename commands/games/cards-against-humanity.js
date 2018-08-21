@@ -3,7 +3,6 @@ const { escapeMarkdown } = require('discord.js');
 const { stripIndents } = require('common-tags');
 const { shuffle } = require('../../util/Util');
 const Game = require('../../structures/Game');
-const { blackCards, whiteCards } = require('../../assets/json/cards-against-humanity');
 
 module.exports = class CardsAgainstHumanityCommand extends Command {
 	constructor() {
@@ -23,21 +22,22 @@ module.exports = class CardsAgainstHumanityCommand extends Command {
 					type: Argument.range('integer', 1, 20, true)
 				},
 				{
-					id: 'noMidJoin',
-					match: 'flag',
-					flag: ['--no-mid-join', '-nmj']
-				},
-				{
 					id: 'bot',
 					match: 'flag',
-					flag: ['--bot', '--rando', '-b']
+					flag: ['--bot', '--rando', '-b', '-r']
+				},
+				{
+					id: 'blacklist',
+					match: 'option',
+					flag: ['--blacklist', '-bl']
 				}
 			]
 		});
 	}
 
-	async exec(msg, { maxPts, noMidJoin, bot }) {
+	async exec(msg, { maxPts, bot, blacklist }) {
 		if (this.client.games.has(msg.channel.id)) return msg.util.reply('Only one game may be occurring per channel.');
+		const { blackCards, whiteCards } = this.client.decks.generate(blacklist.split(',') || []);
 		this.client.games.set(msg.channel.id, new Game(msg.channel, whiteCards, blackCards, 'Black'));
 		const game = this.client.games.get(msg.channel.id);
 		try {
@@ -46,7 +46,7 @@ module.exports = class CardsAgainstHumanityCommand extends Command {
 				this.client.games.delete(msg.channel.id);
 				return msg.util.sendNew('Game could not be started...');
 			}
-			if (!noMidJoin) game.createJoinLeaveCollector(msg.channel, game);
+			game.createJoinLeaveCollector(msg.channel, game);
 			while (!game.winner) {
 				const czar = game.changeCzar();
 				for (const player of game.players.values()) {
@@ -114,8 +114,8 @@ module.exports = class CardsAgainstHumanityCommand extends Command {
 			if (!game.winner) return msg.util.sendNew('See you next time!');
 			return msg.util.sendNew(`And the winner is... ${game.winner}! Great job!`);
 		} catch (err) {
-			this.client.games.delete(msg.channel.id);
 			game.stopJoinLeaveCollector();
+			this.client.games.delete(msg.channel.id);
 			return msg.util.reply(`Oh no, an error occurred: \`${err.message}\`. Try again later!`);
 		}
 	}

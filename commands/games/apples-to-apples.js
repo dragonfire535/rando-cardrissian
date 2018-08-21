@@ -3,7 +3,6 @@ const { escapeMarkdown } = require('discord.js');
 const { stripIndents } = require('common-tags');
 const { shuffle } = require('../../util/Util');
 const Game = require('../../structures/Game');
-const { greenCards, redCards } = require('../../assets/json/apples-to-apples');
 
 module.exports = class ApplesToApplesCommand extends Command {
 	constructor() {
@@ -23,22 +22,18 @@ module.exports = class ApplesToApplesCommand extends Command {
 					type: Argument.range('integer', 1, 20, true)
 				},
 				{
-					id: 'noMidJoin',
-					match: 'flag',
-					flag: ['--no-mid-join', '-nmj']
-				},
-				{
 					id: 'bot',
 					match: 'flag',
-					flag: ['--bot', '--rando', '-b']
+					flag: ['--bot', '--rando', '-b', '-r']
 				}
 			]
 		});
 	}
 
-	async exec(msg, { maxPts, noMidJoin, bot }) {
+	async exec(msg, { maxPts, bot }) {
 		if (this.client.games.has(msg.channel.id)) return msg.util.reply('Only one game may be occurring per channel.');
-		this.client.games.set(msg.channel.id, new Game(msg.channel, redCards, greenCards, 'Green'));
+		const { blackCards, whiteCards } = this.client.decks.get('apples');
+		this.client.games.set(msg.channel.id, new Game(msg.channel, whiteCards, blackCards, 'Green'));
 		const game = this.client.games.get(msg.channel.id);
 		try {
 			const awaitedPlayers = await game.awaitPlayers(msg, bot ? this.client.user : null);
@@ -46,7 +41,7 @@ module.exports = class ApplesToApplesCommand extends Command {
 				this.client.games.delete(msg.channel.id);
 				return msg.util.sendNew('Game could not be started...');
 			}
-			if (!noMidJoin) game.createJoinLeaveCollector(msg.channel, game);
+			game.createJoinLeaveCollector(msg.channel, game);
 			while (!game.winner) {
 				const czar = game.changeCzar();
 				for (const player of game.players.values()) {
@@ -57,15 +52,15 @@ module.exports = class ApplesToApplesCommand extends Command {
 					await msg.util.sendNew('Oh... It looks like everyone left...');
 					break;
 				}
-				const green = game.blackDeck.draw();
+				const black = game.blackDeck.draw();
 				await msg.util.sendNew(stripIndents`
 					The card czar will be ${czar.user}!
-					The Green Card is: **${escapeMarkdown(green.text)}**
+					The Green Card is: **${escapeMarkdown(black.text)}**
 
 					Sending DMs...
 				`);
 				const chosenCards = [];
-				const turns = await Promise.all(game.players.map(player => player.turn(green, chosenCards)));
+				const turns = await Promise.all(game.players.map(player => player.turn(black, chosenCards)));
 				const extra = turns.reduce((a, b) => a + b);
 				if (!chosenCards.length) {
 					await msg.util.sendNew('Hmm... No one even tried.');
@@ -73,8 +68,8 @@ module.exports = class ApplesToApplesCommand extends Command {
 				}
 				const cards = shuffle(chosenCards);
 				await msg.util.sendNew(stripIndents`
-					${czar.user}, which card${green.pick > 1 ? 's' : ''} do you pick?
-					**Green Card**: ${escapeMarkdown(green.text)}
+					${czar.user}, which card${black.pick > 1 ? 's' : ''} do you pick?
+					**Green Card**: ${escapeMarkdown(black.text)}
 
 					${cards.map((card, i) => `**${i + 1}.** ${card.cards.join(' | ')}`).join('\n')}
 				`);
@@ -114,8 +109,8 @@ module.exports = class ApplesToApplesCommand extends Command {
 			if (!game.winner) return msg.util.sendNew('See you next time!');
 			return msg.util.sendNew(`And the winner is... ${game.winner}! Great job!`);
 		} catch (err) {
-			this.client.games.delete(msg.channel.id);
 			game.stopJoinLeaveCollector();
+			this.client.games.delete(msg.channel.id);
 			return msg.util.reply(`Oh no, an error occurred: \`${err.message}\`. Try again later!`);
 		}
 	}

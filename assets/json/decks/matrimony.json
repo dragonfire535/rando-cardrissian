@@ -1,0 +1,459 @@
+{
+	"name": "Cads About Matrimony",
+	"id": "matrimony",
+	"official": false,
+	"blackCards": [
+		{
+			"pick": 1,
+			"text": "What's the most common obstacle to consummating a marriage on one's wedding night?"
+		},
+		{
+			"pick": 1,
+			"text": "What will the groom think of when he first sees the bride on their wedding day?"
+		},
+		{
+			"pick": 1,
+			"text": "What was the happiest memory from the honeymoon?"
+		},
+		{
+			"pick": 1,
+			"text": "What should every couple incorporate into their first dance?"
+		},
+		{
+			"pick": 1,
+			"text": "In a marriage, whatever the question is, the answer is always _."
+		},
+		{
+			"pick": 1,
+			"text": "First comes love, then comes marriage, then comes _."
+		},
+		{
+			"pick": 1,
+			"text": "If you like it, then you should put _ on it."
+		},
+		{
+			"pick": 1,
+			"text": "What's a sure sign of a healthy marriage?"
+		},
+		{
+			"pick": 1,
+			"text": "True love means _."
+		},
+		{
+			"pick": 1,
+			"text": "She's not just my wife. She's also _."
+		},
+		{
+			"pick": 1,
+			"text": "Consider including _ in your vows."
+		},
+		{
+			"pick": 1,
+			"text": "What's the #1 cause of wedding day jitters?"
+		},
+		{
+			"pick": 1,
+			"text": "What the fuck is your problem?"
+		},
+		{
+			"pick": 1,
+			"text": "What's the best way to spice up your marriage after years of monotony?"
+		},
+		{
+			"pick": 2,
+			"text": "It's not _ that puts strain on a relationship, it's _."
+		},
+		{
+			"pick": 1,
+			"text": "Love is patient, love is kind. Love is _."
+		},
+		{
+			"pick": 1,
+			"text": "Marriage is a lot of work, which mainly consists of _."
+		},
+		{
+			"pick": 2,
+			"text": "Marriage: the end of _ and the beginning of _."
+		},
+		{
+			"pick": 1,
+			"text": "_ doesn't count as cheating."
+		},
+		{
+			"pick": 1,
+			"text": "What was your favorite wedding photo of?"
+		},
+		{
+			"pick": 1,
+			"text": "_: grounds for divorce in all 50 states."
+		},
+		{
+			"pick": 1,
+			"text": "Along with something borrowed and something blue, be sure to take _ with you down the aisle."
+		},
+		{
+			"pick": 2,
+			"text": "The only thing worse than _ at a wedding is _."
+		},
+		{
+			"pick": 1,
+			"text": "What's the secret to a long and happy marriage?"
+		},
+		{
+			"pick": 1,
+			"text": "Nothing gets a wedding reception fired up like _."
+		},
+		{
+			"pick": 1,
+			"text": "What will be the best thing about the couple's married sex life?"
+		},
+		{
+			"pick": 1,
+			"text": "The first five years are the hardest. After that, it's all _."
+		},
+		{
+			"pick": 1,
+			"text": "Make sure you have _ and the rest will take care of itself."
+		},
+		{
+			"pick": 1,
+			"text": "The first issue the couple tackles in marriage counseling will be _."
+		},
+		{
+			"pick": 1,
+			"text": "Nothing says \"fulfilling life-long commitment\" like _."
+		},
+		{
+			"pick": 1,
+			"text": "It's trendy to include _ in your wedding these days."
+		},
+		{
+			"pick": 1,
+			"text": "Every wedding toast should include at least one mention of _."
+		},
+		{
+			"pick": 1,
+			"text": "What's the only thing sexier than confidence?"
+		},
+		{
+			"pick": 1,
+			"text": "The word \"husband\" comes from the Latin word for _."
+		},
+		{
+			"pick": 1,
+			"text": "Between the champagne toast and the cake-cutting, there was _."
+		},
+		{
+			"pick": 1,
+			"text": "_. A sure-fire cure for the seven-year itch."
+		},
+		{
+			"pick": 1,
+			"text": "_. A wedding gift you'll cherish forever."
+		},
+		{
+			"pick": 1,
+			"text": "In a committed adult relationship, _ goes a long way."
+		},
+		{
+			"pick": 1,
+			"text": "Studies show that married people are much more likely than single people to have _."
+		},
+		{
+			"pick": 1,
+			"text": "What unique detail did the bride's dress include?"
+		},
+		{
+			"pick": 1,
+			"text": "Being married means having the freedom to embrace _."
+		},
+		{
+			"pick": 1,
+			"text": "The wedding cake was shaped like _."
+		},
+		{
+			"pick": 1,
+			"text": "What's the groom hiding in his underwear?"
+		},
+		{
+			"pick": 1,
+			"text": "The ceremony ended with _."
+		},
+		{
+			"pick": 1,
+			"text": "The couple has a wonderful life filled with _ ahead of them."
+		},
+		{
+			"pick": 1,
+			"text": "There's nothing more romantic than _."
+		},
+		{
+			"pick": 1,
+			"text": "A healthy long-term sex life is built on _."
+		},
+		{
+			"pick": 1,
+			"text": "What's the couple's favorite shared hobby?"
+		},
+		{
+			"pick": 1,
+			"text": "Instead of a garter toss, try _."
+		},
+		{
+			"pick": 1,
+			"text": "How did you celebrate your first anniversary?"
+		},
+		{
+			"pick": 1,
+			"text": "What saved your marriage?"
+		},
+		{
+			"pick": 1,
+			"text": "Their first fight as a married couple was about _."
+		},
+		{
+			"pick": 1,
+			"text": "The proposal featured _."
+		},
+		{
+			"pick": 1,
+			"text": "What's a favorite pastime of the family you're marrying into?"
+		},
+		{
+			"pick": 1,
+			"text": "What did the rehearsal dinner taste like?"
+		}
+	],
+	"whiteCards": [
+		"Blaring Gangnam Style on repeat.",
+		"Low sperm motility.",
+		"A drunk relative muttering racial slurs.",
+		"The sudden need to conceal a massive boner.",
+		"A long, awkward pause before she says \"I do.\".",
+		"A see-through wedding gown.",
+		"A pair of rusty handcuffs and a bottle of lube.",
+		"That bridesmaid that won't stop crying.",
+		"A good old-fashioned case of whiskey dick.",
+		"Undying love and eternal affection.",
+		"Herpes.",
+		"Your father-in-law's erectile dysfunction pills.",
+		"Holding hands when you get old.",
+		"Swinging.",
+		"Cat-like night vision.",
+		"Not knowing what a rusty trombone is.",
+		"Finding out you're actually cousins.",
+		"Saving yourself for marriage.",
+		"Over 5,000 flavored condoms.",
+		"Unplanned pregnancy!",
+		"Getting high and making out.",
+		"Married sex.",
+		"Vaginal juices.",
+		"A tasteful spray tan.",
+		"A gag ball and a riding crop.",
+		"Way too much sensual massage oil.",
+		"Premature ejaculation.",
+		"One too many blow job shots.",
+		"Skinny dipping in a vat of bubble solution.",
+		"Your creepy uncle with the wandering hands.",
+		"That time the bride thought she was a lesbian.",
+		"Life in a nudist vegan hippie commune.",
+		"Deep existential loneliness.",
+		"Post-coital bliss.",
+		"Too damn many kids.",
+		"A \"business trip.\".",
+		"A little too much glitter.",
+		"Testosterone-induced rage.",
+		"A drunk karaoke version of \"Take My Breath Away\".",
+		"A groomsman in a kilt ...and nothing else.",
+		"A half-finished Brazilian wax job.",
+		"Being kind of hormonal.",
+		"Running out of things to talk about.",
+		"Paralyzing, all-consuming fear of commitment.",
+		"Leaving little love notes around the house.",
+		"Unicorns and lollipops.",
+		"Sleeping with your therapist.",
+		"The Chicken Dance.",
+		"A hickey from a stripper.",
+		"Drinking your troubles away nightly.",
+		"High-fiving after sex.",
+		"Nipple clamps on the gift registry.",
+		"Refusing to shave.",
+		"Sleeping on the couch.",
+		"Falling a little more in love every day forever.",
+		"Faking a pregnancy.",
+		"Making out in public.",
+		"A mustache ride.",
+		"Long walks at sunset ON DRUGS.",
+		"Far too many dildos.",
+		"A penis that's almost too big.",
+		"Fighting over whether or not you're fighting.",
+		"Multiple orgasms.",
+		"Doing what Jesus would do.",
+		"Storm trooper centerpieces.",
+		"Marrying an axe murderer.",
+		"Hogging the bathroom.",
+		"Some innocent wife-swapping among friends.",
+		"Weekly date nights at the local BDSM dungeon.",
+		"Falling asleep during oral sex.",
+		"Not remembering your wedding night.",
+		"A little same-sex experimentation.",
+		"A three-way in Vegas.",
+		"Talking dirty in a Spanish accent.",
+		"A raging libido.",
+		"Going black, and never going back.",
+		"The best man dressed in drag.",
+		"A heart-shaped Jacuzzi filled with champagne and Viagra™.",
+		"Secretly drunk-dialing exes.",
+		"Sexercise.",
+		"Changing both your last names to \"Danger.\".",
+		"Forgetting the safe word.",
+		"Praying and reading the Torah.",
+		"Bad dragon erotica.",
+		"An elaborate alien abduction fantasy.",
+		"A godless harlot.",
+		"Praying and reading the Bible.",
+		"Martha Stewart.",
+		"That dirty weekend in Cabo.",
+		"Unconditional love.",
+		"The challenge of balancing career and family.",
+		"Don Draper.",
+		"A pound of weed and a Mexican stripper.",
+		"Sex on the kitchen table.",
+		"Unleashing the vixen within.",
+		"Delirious, infectious happiness.",
+		"Fighting over the remote control.",
+		"Getting kicked out of your own wedding reception.",
+		"A lifetime of judgmental glances from your in-laws.",
+		"A colorful assortment of butt plugs.",
+		"Being too hung-over for a hand job.",
+		"Getting a dog.",
+		"A thousand shitty wedding-planning websites.",
+		"The best man's dark sexual past.",
+		"Forgetting your birth control pills.",
+		"Decorating the house with vagina-inspired artwork.",
+		"A hot neighbor with no conscience and nothing to lose.",
+		"A severed finger in the wedding cake.",
+		"A solid five-year plan.",
+		"Breaking the hymen.",
+		"A penis with a smiley face.",
+		"A misunderstanding involving a strap-on.",
+		"Someone getting arrested.",
+		"A happy ending.",
+		"Getting tired of being on top.",
+		"A forged prescription for STD meds.",
+		"Sharing a bank account.",
+		"Wondering if you made the right decision.",
+		"Gratuitous PDA on Facebook.",
+		"Getting a pube stuck in your teeth.",
+		"Rephrasing it as an \"I feel\" statement.",
+		"Pooping with the door open.",
+		"A hasty vasectomy.",
+		"A botched genital piercing.",
+		"An unacceptable volume of body hair.",
+		"A DJ with a Wham! obsession.",
+		"A mysterious stain on his tuxedo.",
+		"PMS-ing at the altar.",
+		"A timeless reading from Fifty Shades of Grey.",
+		"Walking down the aisle to \"Baby Got Back.\".",
+		"Your unborn children.",
+		"Someone using the word \"Bridezilla\" one more goddamn time.",
+		"A lifetime subscription to Big Black Butts magazine.",
+		"The secret handshake.",
+		"Mowing the fucking lawn.",
+		"Blaming it on the dog.",
+		"A nervous breakdown at IKEA™.",
+		"A healthy work-life balance.",
+		"Several decades of festering resentment.",
+		"Really letting yourself go.",
+		"Wondering who's gonna die first.",
+		"The wedding-industrial complex.",
+		"Hiding the M&M;'s®.",
+		"\"Intimacy issues.\".",
+		"Just giving up.",
+		"A 50% divorce rate.",
+		"Keeping tabs. Always keeping tabs.",
+		"Making a big fat deal out of nothing.",
+		"A butthole full of mustard.",
+		"Unwavering support for your career.",
+		"A small price to pay for half off the catering.",
+		"People constantly telling you that marriage is a lot of work.",
+		"Faking it until making it.",
+		"Wedding crashers passing out Ecstasy to your elderly relatives.",
+		"A maid of honor with no shame. No. Shame.",
+		"Winking at waitresses.",
+		"A diamond the size of Uranus.",
+		"Forgetting your anniversary, year after year.",
+		"Wishing this moment could last forever.",
+		"Hyperventilating at the gynecologist's office.",
+		"Cashing in the kids' college fund to pay off your substantial gambling debts.",
+		"A secret second family in Canada.",
+		"Sharing all your most embarrassing secrets. Except one.",
+		"A groomsman confessing he always secretly loved you.",
+		"Your dad showing up drunk. Like always.",
+		"His prostate.",
+		"Realizing the Kama Sutra is actually really lame.",
+		"Knowing way too much about each other's bathroom habits.",
+		"Things you can never unsee.",
+		"Wishing you were half as happy as your social media posts make you seem.",
+		"Texting instead of talking.",
+		"Grocery shopping in a bathrobe.",
+		"The happiest man on Earth.",
+		"Meaning something completely different by the word \"facial.\".",
+		"Staying up all night talking.",
+		"Wondering where that rash came from.",
+		"Pretending you were just kidding.",
+		"Seven tubs of ass wax.",
+		"All the sacrifices that come with it.",
+		"Low self-esteem.",
+		"Each other.",
+		"Blood on the sheets.",
+		"Saying \"Me so horny!\" in a Yoda voice.",
+		"Open, honest communication.",
+		"Gay marriage.",
+		"Tickle-fight-induced vomiting.",
+		"Passive-aggressive notes on the fridge.",
+		"Homoerotic undertones.",
+		"Getting caught masturbating to hentai porn.",
+		"Ranch dressing.",
+		"A quivering pile of love jelly.",
+		"Putting the cats in the pre-nup.",
+		"Taking things too literally.",
+		"Daily reminders about who actually pays the mortgage.",
+		"Meeting the weekly cunnilingus quota.",
+		"A demonstration of who really wears the pants in this family.",
+		"A daily, futile power struggle.",
+		"A bizarre love octagon.",
+		"A digital chastity belt.",
+		"Too little, too late.",
+		"A lifetime of crippling regret.",
+		"Make-up sex.",
+		"Whisper-fighting in the kitchen.",
+		"A pale slurry of tears, icing, and denial.",
+		"The ceremonial spanking of the bride.",
+		"Mormons.",
+		"A veil made out of duct tape.",
+		"Hearing the same jokes over and over again for all eternity.",
+		"Finding your soul mate.",
+		"A reluctant, eye-rolling apology.",
+		"A disturbingly life-like blow-up doll.",
+		"Adultery.",
+		"Coveting your neighbor's polyamorous lifestyle.",
+		"A mediocre dominatrix.",
+		"Wearing a t-shirt that says \"I TOLD YOU SO.\".",
+		"Lower expectations.",
+		"CheapRussianBrides.com.",
+		"Naked aggression.",
+		"A shrieking biological alarm clock.",
+		"Fairy-themed cosplay.",
+		"A waterproof, vibrating attachment.",
+		"A heart made of sentient nanobots.",
+		"Foreplay.",
+		"Neanderthal mating habits.",
+		"Admitting defeat.",
+		"Feelings of inadequacy.",
+		"A top-shelf prostitute.",
+		"Matching denim outfits.",
+		"Motherfucking cupcakes.",
+		"Ring finger tattoos."
+	]
+}

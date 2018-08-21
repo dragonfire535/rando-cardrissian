@@ -1,0 +1,67 @@
+{
+	"name": "Dragon Fire Pack",
+	"id": "dragonfire",
+	"official": false,
+	"blackCards": [
+		{
+			"pick": 1,
+			"text": "_ likes to eat pant."
+		},
+		{
+			"pick": 2,
+			"text": "My _ could beat up your _ any day!"
+		},
+		{
+			"pick": 1,
+			"text": "_ 2. Electric Boogaloo."
+		},
+		{
+			"pick": 1,
+			"text ": "Top 10 anime _."
+		},
+		{
+			"pick": 1,
+			"text": "_ is ruining the economy. Again."
+		},
+		{
+			"pick": 1,
+			"text": "What do you want from McDonald's?"
+		},
+		{
+			"pick": 1,
+			"text": "What's the deal with _?"
+		},
+		{
+			"pick": 2,
+			"text": "Why are so many people so obsessed with _? It's _."
+		},
+		{
+			"pick": 1,
+			"text": "I kicked your ass so hard it went back in time and got me _."
+		}
+	],
+	"whiteCards": [
+		"Bort Sampson's catchphrase, \"eat pant\".",
+		"The cheap Lando knock-off named Rando Cardrissian.",
+		"dragonfire535.",
+		"Xiao.",
+		"[object Object]",
+		"The eventual release of Xiao's public source code.",
+		"LuckyAquapura.",
+		"Another win by this dumb bot.",
+		"MAX POWER!!1!!1!!!!!1!!",
+		"Yet another broken Cards Against Humanity game caused by Dragon being a dumbass.",
+		"Naming the staff channel something relevant for once.",
+		"Saving net neutrality for the sixtieth fucking time.",
+		"Lesbianism.",
+		"Male pregnancy.",
+		"Getting someone so pregnant they have quintuplets.",
+		"The BFG9000.",
+		"A bunch of weebs collectively deciding to lewd Kanna Kobayashi.",
+		"The inevitable release of Half-Life 3.",
+		"Googling Google to get to fucking Google.",
+		"Not doing real work and instead coding a Discord bot that plays Cards Against Humanity.",
+		"Playing Apples to Apples instead of Cards Against Humanity because it's \"kid-friendly\".",
+		"Being diagnosed with Mesothelioma and not getting financial compensation."
+	]
+}
