@@ -66,6 +66,7 @@ module.exports = class Game {
 		const collector = this.channel.createMessageCollector(res => {
 			if (res.author.bot) return false;
 			if (this.players.has(res.author.id) && res.content.toLowerCase() !== 'leave game') return false;
+			if (!this.players.has(res.author.id) && res.content.toLowerCase() !== 'join game') return false;
 			if (this.czar.id === res.author.id || this.players.size >= 10) {
 				res.react(FAILURE_EMOJI_ID || '❌').catch(() => null);
 				return false;
