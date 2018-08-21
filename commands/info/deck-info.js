@@ -17,7 +17,7 @@ module.exports = class DeckInfoCommand extends Command {
 					},
 					type: deck => {
 						if (!deck) return null;
-						const search = deck.name.toLowerCase();
+						const search = deck.toLowerCase();
 						const found = this.client.decks.filter(d => d.id.includes(search) || d.name.toLowerCase().includes(search));
 						if (!found.size || found.size > 1) return null;
 						return found.first();

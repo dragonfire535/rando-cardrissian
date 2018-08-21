@@ -1,5 +1,4 @@
 const { Command } = require('discord-akairo');
-const { stripIndents } = require('common-tags');
 
 module.exports = class DeckListCommand extends Command {
 	constructor() {
@@ -11,9 +10,6 @@ module.exports = class DeckListCommand extends Command {
 	}
 
 	exec(msg) {
-		return msg.util.send(stripIndents`
-			__**Deck List**__:
-			${this.client.decks.map(deck => `${deck.name} (${deck.id})`).join('\n')}
-		`);
+		return msg.util.send(this.client.decks.map(deck => `${deck.name} (${deck.id})`).join(', '));
 	}
 };
