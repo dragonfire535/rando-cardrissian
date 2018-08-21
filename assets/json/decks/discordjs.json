@@ -34,6 +34,18 @@
 		{
 			"pick": 1,
 			"text": "Ban reason: _."
+		},
+		{
+			"pick": 2,
+			"text": "_? More like _."
+		},
+		{
+			"pick": 1,
+			"text": "Lewdcario changed her avatar again, this time it's _."
+		},
+		{
+			"pick": 2,
+			"text": "Welp, it's a new anime season, and Crawl's bot changed from _ to _."
 		}
 	],
 	"whiteCards": [
@@ -69,6 +81,9 @@
 		"Souji, the furry in denial.",
 		"ᐃᑦᑎᓂᖅᓯᐅᑐᖅ ᑕᖅᓴᖅ.",
 		"A full-on conversation in the announcements channel.",
-		"An accidental @everyone ping that pings over 15,000 people."
+		"An accidental @everyone ping that pings over 15,000 people.",
+		"Another cosmic masked text logo for a hydrabolt project.",
+		"Crude Cards.",
+		"Ur mom."
 	]
 }
