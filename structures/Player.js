@@ -1,5 +1,6 @@
 const { stripIndents } = require('common-tags');
 const { escapeMarkdown } = require('discord.js');
+const { SUCCESS_EMOJI_ID, FAILURE_EMOJI_ID } = process.env;
 
 module.exports = class Player {
 	constructor(game, user) {
@@ -27,9 +28,10 @@ module.exports = class Player {
 		this.dealHand();
 		try {
 			const extra = await this.chooseCards(black, chosenCards);
-			await this.user.send(`Nice! Return to ${this.game.channel} to await the results!`);
+			if (!this.user.bot) await this.user.send(`Nice! Return to ${this.game.channel} to await the results!`);
 			return extra;
 		} catch (err) {
+			this.strikes++;
 			return 0;
 		}
 	}
@@ -54,14 +56,16 @@ module.exports = class Player {
 			if (res.content.toLowerCase() === 'swap' && this.points > 0 && !swapped) return true;
 			if (res.content.toLowerCase() === 'gamble' && this.points > 0 && !gambled) return true;
 			const existing = hand[Number.parseInt(res.content, 10) - 1];
-			if (!existing) return false;
-			if (chosen.includes(existing)) return false;
-			chosen.push(existing);
+			if (!existing || chosen.includes(existing)) {
+				res.react(FAILURE_EMOJI_ID || '❌').catch(() => null);
+				return false;
+			}
 			return true;
 		}, { time: 60000 });
 		collector.on('collect', async msg => {
+			const existing = hand[Number.parseInt(msg.content, 10) - 1];
 			if (msg.content.toLowerCase() === 'swap') {
-				await this.user.send('Swapping cards...');
+				await msg.react(SUCCESS_EMOJI_ID || '✅');
 				for (const card of this.hand) this.hand.delete(card);
 				this.dealHand();
 				hand = Array.from(this.hand);
@@ -69,12 +73,14 @@ module.exports = class Player {
 				swapped = true;
 				await this.sendHand(hand, black);
 				return;
-			}
-			if (msg.content.toLowerCase() === 'gamble') {
-				await this.user.send(`You may now play **${black.pick * 2}** cards!`);
+			} else if (msg.content.toLowerCase() === 'gamble') {
+				await msg.react(SUCCESS_EMOJI_ID || '✅');
 				this.points--;
 				gambled = true;
 				return;
+			} else if (existing) {
+				await msg.react(SUCCESS_EMOJI_ID || '✅');
+				chosen.push(existing);
 			}
 			if (chosen.length >= black.pick * (gambled ? 2 : 1)) collector.stop();
 		});

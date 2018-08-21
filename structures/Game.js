@@ -76,7 +76,7 @@ module.exports = class Game {
 		});
 		collector.on('collect', msg => {
 			if (msg.content.toLowerCase() === 'join game') this.addUser(msg.author);
-			else if (msg.content.toLowerCase() === 'leave game') this.kick(this.players.get(msg.author.id));
+			else if (msg.content.toLowerCase() === 'leave game') this.kick(msg.author);
 		});
 		this.joinLeaveCollector = collector;
 		return this.joinLeaveCollector;
