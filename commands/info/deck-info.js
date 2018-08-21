@@ -38,7 +38,8 @@ module.exports = class DeckInfoCommand extends Command {
 			.addField('❯ Official?', deck.official ? 'Yes' : 'No', true)
 			.addField('❯ View', `[Here](${url})`, true)
 			.addField('❯ Black Cards', deck.blackCards.length, true)
-			.addField('❯ White Cards', deck.whiteCards.length, true);
+			.addField('❯ White Cards', deck.whiteCards.length, true)
+			.addField('❯ Total Cards', deck.blackCards.length + deck.whiteCards.length, true);
 		return msg.util.send({ embed });
 	}
 };
