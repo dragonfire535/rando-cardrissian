@@ -1,4 +1,5 @@
 const { Command } = require('discord-akairo');
+const { stripIndents } = require('common-tags');
 
 module.exports = class DeckListCommand extends Command {
 	constructor() {
@@ -25,6 +26,10 @@ module.exports = class DeckListCommand extends Command {
 		const search = query.toLowerCase();
 		let results = this.client.decks;
 		if (query) results = this.client.decks.filter(d => d.id.includes(search) || d.name.toLowerCase().includes(search));
-		return msg.util.send(results.map(deck => `${deck.name} (${deck.id})`).join(', '));
+		if (!results.size) return msg.util.send('Could not find any results.');
+		return msg.util.send(stripIndents`
+			__**Deck List**__: _(${results.size} Results)_
+			${results.map(deck => `${deck.name} (${deck.id})`).join('\n')}
+		`);
 	}
 };
