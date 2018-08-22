@@ -46,6 +46,46 @@
 		{
 			"pick": 2,
 			"text": "Welp, it's a new anime season, and Crawl's bot changed from _ to _."
+		},
+		{
+			"pick": 1,
+			"text": "We're finally releasing Discord.js v12.0.0! We rewrote voice (again), and added _."
+		},
+		{
+			"pick": 1,
+			"text": "Gawdl3y just finished vigorously masturbating to _."
+		},
+		{
+			"pick": 1,
+			"text": "Starboard message: _."
+		},
+		{
+			"pick": 1,
+			"text": "Read the Docs didn't reply for 6 months, and when they did, all they said was _."
+		},
+		{
+			"pick": 1,
+			"text": "I read the guide but I still don't understand _."
+		},
+		{
+			"pick": 1,
+			"text": "TypeError: Cannot read property '_' of undefined."
+		},
+		{
+			"pick": 1,
+			"text": "What did you do to earn proficient?"
+		},
+		{
+			"pick": 1,
+			"text": "Crawl kicked appel again, this time it was for _."
+		},
+		{
+			"pick": 1,
+			"text": "_ left."
+		},
+		{
+			"pick": 1,
+			"text": "What will finally make Souji accept being a furry?"
 		}
 	],
 	"whiteCards": [
@@ -84,6 +124,15 @@
 		"An accidental @everyone ping that pings over 15,000 people.",
 		"Another cosmic masked text logo for a hydrabolt project.",
 		"Crude Cards.",
-		"Ur mom."
+		"Ur mom.",
+		"Eris.",
+		"Discord.js.",
+		"Discord.js v8, the only true version.",
+		"Help vampires.",
+		"Actually reading the docs for once.",
+		"Another broken snekfetch release.",
+		"space.",
+		"Another Discord.js release that doesn't include typings.",
+		"Donuts. Or Cheese."
 	]
 }
