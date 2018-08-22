@@ -30,14 +30,20 @@ module.exports = class CardsAgainstHumanityCommand extends Command {
 					id: 'blacklist',
 					match: 'option',
 					flag: ['--blacklist', '-bl']
+				},
+				{
+					id: 'whitelist',
+					match: 'option',
+					flag: ['--whitelist', '-wl']
 				}
 			]
 		});
 	}
 
-	async exec(msg, { maxPts, bot, blacklist }) {
+	async exec(msg, { maxPts, bot, blacklist, whitelist }) { // eslint-disable-line complexity
 		if (this.client.games.has(msg.channel.id)) return msg.util.reply('Only one game may be occurring per channel.');
-		const { blackCards, whiteCards } = this.client.decks.generate(blacklist ? blacklist.split(',') : []);
+		if (blacklist && whitelist) return msg.util.reply('Both a blacklist and a whitelist? That sounds weird.');
+		const { blackCards, whiteCards } = this.client.decks.generate(blacklist, whitelist);
 		this.client.games.set(msg.channel.id, new Game(msg.channel, whiteCards, blackCards, 'Black'));
 		const game = this.client.games.get(msg.channel.id);
 		try {

@@ -18,9 +18,12 @@ module.exports = class DeckManager extends Collection {
 		return this;
 	}
 
-	generate(blacklist) {
-		if (this.cache && !blacklist.length) return this.cache;
-		const filtered = this.filter(deck => !blacklist.includes(deck.id) && deck.id !== 'apples');
+	generate(blacklist, whitelist) {
+		if (this.cache && !blacklist.length && !whitelist.length) return this.cache;
+		blacklist = blacklist ? blacklist.split(',') : [];
+		blacklist.push('apples');
+		whitelist = whitelist ? whitelist.split(',') : null;
+		const filtered = this.filter(deck => whitelist ? whitelist.includes(deck.id) : !blacklist.includes(deck.id));
 		const blackCards = [];
 		const whiteCards = [];
 		for (const deck of filtered.values()) {
