@@ -55,6 +55,6 @@ module.exports = class DeckManager extends Collection {
 	}
 
 	officialIDs(reverse = false) {
-		return this.filter(deck => reverse ? !deck.official : deck.offical).map(deck => deck.id);
+		return this.filter(deck => reverse ? !deck.official : deck.official).map(deck => deck.id);
 	}
 };
