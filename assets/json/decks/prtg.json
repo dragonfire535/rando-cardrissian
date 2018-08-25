@@ -1,6 +1,6 @@
 {
 	"name": "PRTG",
-	"slug": "prtg",
+	"id": "prtg",
 	"official": false,
 	"blackCards": [
 		{

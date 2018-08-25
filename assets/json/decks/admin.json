@@ -1,6 +1,6 @@
 {
 	"name": "Admin's Picks",
-	"slug": "admin",
+	"id": "admin",
 	"official": false,
 	"blackCards": [
 		{
