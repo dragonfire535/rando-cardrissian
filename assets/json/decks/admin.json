@@ -1,0 +1,728 @@
+{
+	"name": "Admin's Picks",
+	"slug": "admin",
+	"official": false,
+	"blackCards": [
+		{
+			"pick": 1,
+			"text": "Real men watch _."
+		},
+		{
+			"pick": 2,
+			"text": "So wait, _ was actually _? Wow, I didn't see that one coming!"
+		},
+		{
+			"pick": 1,
+			"text": "Whenever I'm splashed with cold water, I turn into _."
+		},
+		{
+			"pick": 2,
+			"text": "No matter how you look at it, ultimately _ is responsible for _."
+		},
+		{
+			"pick": 1,
+			"text": "_. That is my fetish."
+		},
+		{
+			"pick": 1,
+			"text": "_ is camping my lane."
+		},
+		{
+			"pick": 1,
+			"text": "Vegeta, what does the scouter say?"
+		},
+		{
+			"pick": 1,
+			"text": "Who the hell do you think I am?!"
+		},
+		{
+			"pick": 1,
+			"text": "On the next episode of Dragon Ball Z, Goku has a fierce battle with _."
+		},
+		{
+			"pick": 1,
+			"text": "Who let the dogs out?"
+		},
+		{
+			"pick": 1,
+			"text": "In his next movie, Will Smith saves the world from _."
+		},
+		{
+			"pick": 2,
+			"text": "_ and _ are the new hot couple."
+		},
+		{
+			"pick": 1,
+			"text": "When North Korea gets _, it will be the end of the world."
+		},
+		{
+			"pick": 1,
+			"text": "Plan a three course meal."
+		},
+		{
+			"pick": 1,
+			"text": "Tastes like _."
+		},
+		{
+			"pick": 1,
+			"text": "Hey guys, check out my _ montage!"
+		},
+		{
+			"pick": 1,
+			"text": "What will Xyzzy take over the world with?"
+		},
+		{
+			"pick": 1,
+			"text": "Dustin Browder demands more _ in StarCraft®."
+		},
+		{
+			"pick": 1,
+			"text": "Welcome to my secret lair on _."
+		},
+		{
+			"pick": 1,
+			"text": "Truly and without question, _ is the manliest of all men."
+		},
+		{
+			"pick": 1,
+			"text": "WANTED: $50,000,000,000 reward for the apprehension of_."
+		},
+		{
+			"pick": 1,
+			"text": "People die when they are _."
+		},
+		{
+			"pick": 1,
+			"text": "Okay, I'll admit it. I would totally go gay for _."
+		},
+		{
+			"pick": 1,
+			"text": "_.tumblr.com."
+		},
+		{
+			"pick": 1,
+			"text": "_. Goddammit, Japan."
+		},
+		{
+			"pick": 1,
+			"text": "All your _ are belong to us."
+		},
+		{
+			"pick": 1,
+			"text": "Digimon! Digivolve to: _-mon!"
+		},
+		{
+			"pick": 1,
+			"text": "What will YouTube add in its next unneeded update?"
+		},
+		{
+			"pick": 1,
+			"text": "I have never in my life laughed harder than the first time I watched _."
+		},
+		{
+			"pick": 1,
+			"text": "Who's an asshole?"
+		},
+		{
+			"pick": 1,
+			"text": "Ladies and gentlemen, I give you _... COVERED IN BEES!!!"
+		},
+		{
+			"pick": 1,
+			"text": "Sorry Mario, but _ is in another castle."
+		},
+		{
+			"pick": 1,
+			"text": "There are guilty pleasures. And then there's _."
+		},
+		{
+			"pick": 1,
+			"text": "_ for president!"
+		},
+		{
+			"pick": 1,
+			"text": "_ is a lie."
+		},
+		{
+			"pick": 1,
+			"text": "Have fun, don't be _."
+		},
+		{
+			"pick": 1,
+			"text": "Don't get mad, get _."
+		},
+		{
+			"pick": 1,
+			"text": "When it comes to Japanese cuisine, there's simply nothing better than _."
+		},
+		{
+			"pick": 2,
+			"text": "After I saw _, I needed _."
+		},
+		{
+			"pick": 1,
+			"text": "I'm an expert on _."
+		},
+		{
+			"pick": 3,
+			"text": "Just announced: The brand new anime adaptation of _, starring _ as the voice of _."
+		},
+		{
+			"pick": 1,
+			"text": "_ is the only thing that matters."
+		},
+		{
+			"pick": 1,
+			"text": "Cunnilungus and psychiatry brought us to _."
+		},
+		{
+			"pick": 1,
+			"text": "We'll always have _."
+		},
+		{
+			"pick": 1,
+			"text": "OH MY GOD THIS IS THE GREATEST _ I'VE EVER SEEN IN MY LIFE!"
+		},
+		{
+			"pick": 1,
+			"text": "And the award for the filthiest scene in an adult film goes to \"5 women and _.\"."
+		},
+		{
+			"pick": 1,
+			"text": "What mildy annoyed you today?"
+		},
+		{
+			"pick": 1,
+			"text": "The seldomly mentioned 4th little pig built his house out of _."
+		},
+		{
+			"pick": 1,
+			"text": "Let's all rock out to the sounds of _."
+		},
+		{
+			"pick": 1,
+			"text": "No one wants to see your _."
+		},
+		{
+			"pick": 1,
+			"text": "\"Why Grandma\", said Little Red Riding Hood, \"What big _ you have!\"."
+		},
+		{
+			"pick": 2,
+			"text": "_ uses _. It is SUPER EFFECTIVE!"
+		},
+		{
+			"pick": 1,
+			"text": "It's difficult to explain to friends and family why I know so much about _."
+		},
+		{
+			"pick": 1,
+			"text": "Who knew I'd be able to make a living off of _?"
+		},
+		{
+			"pick": 1,
+			"text": "Take _, it will last longer."
+		},
+		{
+			"pick": 1,
+			"text": "I finally realized I hit rock bottom when I started digging through dumpsters for _."
+		},
+		{
+			"pick": 1,
+			"text": "Long story short, I ended up with _ in my ass."
+		},
+		{
+			"pick": 1,
+			"text": "At first I couldn't understand _, but now it's my biggest kink."
+		},
+		{
+			"pick": 1,
+			"text": "_ is my worst habit."
+		},
+		{
+			"pick": 1,
+			"text": "What do I keep hidden in the crawlspace?"
+		},
+		{
+			"pick": 1,
+			"text": "It's the end of _ as we know it."
+		},
+		{
+			"pick": 1,
+			"text": "I watch movies just to see if I can find a Big Lipped _ Moment."
+		},
+		{
+			"pick": 1,
+			"text": "Go-Go-Gadget, _!"
+		},
+		{
+			"pick": 1,
+			"text": "Everything's better with _."
+		},
+		{
+			"pick": 1,
+			"text": "And it is said his ghost still wanders these halls, forever searching for his lost _."
+		},
+		{
+			"pick": 1,
+			"text": "What have you accomplished today?"
+		},
+		{
+			"pick": 1,
+			"text": "What would you taste like?"
+		},
+		{
+			"pick": 1,
+			"text": "The best part of waking up is _ in your cup."
+		},
+		{
+			"pick": 1,
+			"text": "Why are you frothing with rage?"
+		},
+		{
+			"pick": 1,
+			"text": "What made you happy today?"
+		},
+		{
+			"pick": 2,
+			"text": "Why are there six _ when there are only four _?"
+		},
+		{
+			"pick": 1,
+			"text": "My _ is too big!"
+		},
+		{
+			"pick": 3,
+			"text": "Best drink ever: One part _, three parts _, and a splash of _."
+		},
+		{
+			"pick": 1,
+			"text": "_ makes me uncomfortable."
+		},
+		{
+			"pick": 1,
+			"text": "The primitive villagers were both shocked and amazed when I showed them _."
+		},
+		{
+			"pick": 1,
+			"text": "Stop, drop, and _."
+		},
+		{
+			"pick": 1,
+			"text": "_ is the root of all evil."
+		},
+		{
+			"pick": 1,
+			"text": "Think before you _."
+		},
+		{
+			"pick": 1,
+			"text": "The road to success is paved with _."
+		},
+		{
+			"pick": 1,
+			"text": "And on his farm he had _, E-I-E-I-O!"
+		},
+		{
+			"pick": 2,
+			"text": "A wild _ appeared! It used _!"
+		},
+		{
+			"pick": 1,
+			"text": "What is your mating call?"
+		},
+		{
+			"pick": 1,
+			"text": "The Himalayas are filled with many perils, such as _."
+		},
+		{
+			"pick": 1,
+			"text": "There's _ in my soup."
+		},
+		{
+			"pick": 1,
+			"text": "What is the worst thing anyone could say in front of the police?"
+		},
+		{
+			"pick": 1,
+			"text": "The sad truth is, that at the edge of the universe, there is nothing but _."
+		},
+		{
+			"pick": 1,
+			"text": "What is the saddest thing you've ever seen?"
+		},
+		{
+			"pick": 2,
+			"text": "If life gives you _, make _."
+		},
+		{
+			"pick": 1,
+			"text": "What is your favorite book?"
+		},
+		{
+			"pick": 1,
+			"text": "Who needs a bidet when you have _?"
+		},
+		{
+			"pick": 1,
+			"text": "Kill it with _!"
+		},
+		{
+			"pick": 1,
+			"text": "The Xbox One's DRM policy isn't half as bad as _."
+		},
+		{
+			"pick": 1,
+			"text": "TotalBiscuit's top hat is actually _."
+		},
+		{
+			"pick": 1,
+			"text": "Best game of 2013? _, of course."
+		},
+		{
+			"pick": 1,
+			"text": "I'M-A FIRIN' MAH _!"
+		},
+		{
+			"pick": 1,
+			"text": "How do you get your dog to stop humping your leg?"
+		},
+		{
+			"pick": 1,
+			"text": "_ sounds like a great alternative rock band."
+		},
+		{
+			"pick": 1,
+			"text": "_. Everything else is uncivilized."
+		},
+		{
+			"pick": 1,
+			"text": "Of my entire collection, my most prized possession is _."
+		},
+		{
+			"pick": 1,
+			"text": "_! You know, for kids."
+		},
+		{
+			"pick": 1,
+			"text": "Mom, I swear! Despite its name, _ is NOT a porno!"
+		},
+		{
+			"pick": 1,
+			"text": "The government of Japan recently passed a law that effectively forbids all forms of _."
+		},
+		{
+			"pick": 1,
+			"text": "I can't believe I spent most of my paycheck on _."
+		},
+		{
+			"pick": 1,
+			"text": "_ is the greatest Canadian."
+		},
+		{
+			"pick": 2,
+			"text": "I write slash fanfiction pairing _ with _."
+		},
+		{
+			"pick": 1,
+			"text": "_? It's a DLC item."
+		},
+		{
+			"pick": 1,
+			"text": "Oh god, I can't believe we ate _ at PAX."
+		},
+		{
+			"pick": 1,
+			"text": "Only in Korea can you see _."
+		},
+		{
+			"pick": 1,
+			"text": "Alcoholic games of Clue® lead to _."
+		},
+		{
+			"pick": 2,
+			"text": "_ is the name of my _ cover band."
+		},
+		{
+			"pick": 3,
+			"text": "The Holy Trinity: _, _, and _!"
+		},
+		{
+			"pick": 1,
+			"text": "Praise _!"
+		},
+		{
+			"pick": 1,
+			"text": "What doesn't work that way?"
+		},
+		{
+			"pick": 1,
+			"text": "What can you always find in between the couch cushions?"
+		},
+		{
+			"pick": 1,
+			"text": "What the fuck is wrong with you?"
+		},
+		{
+			"pick": 1,
+			"text": "What is the next great Kickstarter project?"
+		},
+		{
+			"pick": 1,
+			"text": "What is the meaning of life?"
+		},
+		{
+			"pick": 1,
+			"text": "My life for _!"
+		},
+		{
+			"pick": 2,
+			"text": "When I was a kid, all we had in Lunchables were three _ and _."
+		},
+		{
+			"pick": 2,
+			"text": "On its last dying breath, _ sent out a cry for help. A bunch of _ heard the cry."
+		},
+		{
+			"pick": 1,
+			"text": "With Democrats and Republicans in a dead heat, the election was snatched by _ party."
+		},
+		{
+			"pick": 1,
+			"text": "Who would have guessed that the alien invasion would be easily thwarted by _."
+		},
+		{
+			"pick": 1,
+			"text": "If you could fuck anyone in the world, who would you choose?"
+		}
+	],
+	"whiteCards": [
+		"The biggest, blackest dick.",
+		"Doctor Who.",
+		"Jumanji.",
+		"Peanutbutter jelly time.",
+		"EXTERMINATE.",
+		"Wards.",
+		"Fuck you, I'm a bear.",
+		"K-Pop.",
+		"Doing Gangnam Style at a funeral.",
+		"THE GODDAMN BATMAN.",
+		"The crushed dreams of a stripper.",
+		"Swinging an axe in the air while cornholing a bear.",
+		"125% Reccomended Daily Allowance of cock.",
+		"A molotov cocktail.",
+		"Just the tip!",
+		"A Fleshlight®.",
+		"SCIENCE!!1!",
+		"Granny panties.",
+		"A bag of dicks.",
+		"Bearshark.",
+		"Genital warts.",
+		"Trouser snakes.",
+		"A skeptical sheriff.",
+		"The Power of Greyskull.",
+		"A dead hooker.",
+		"PEEEEEEEEEEEEEEEENIIIISSSSSSSS.",
+		"Drinking on live TV.",
+		"Mandatory Sex Party.",
+		"The League of Legends.",
+		"Games you can play with bricks.",
+		"Googly eyes on a cock.",
+		"Typing with your genitals.",
+		"Pirate hookers.",
+		"Miss Piggy.",
+		"The Fresh Prince of Bel-Air.",
+		"Fancy tampons.",
+		"The Card Czar.",
+		"The town drunk.",
+		"Morbid obesity.",
+		"Don Knotts.",
+		"A MILF.",
+		"The end of the world.",
+		"Tinychat.",
+		"Moobs.",
+		"Yellow snow.",
+		"Boobs.",
+		"STEAL ALL THE FARM.",
+		"Standing next to short people to use them as armrests.",
+		"Realizing, too late, that there is no toilet paper left.",
+		"Hookers and blow.",
+		"Scotch.",
+		"A fuck-mothering vampire.",
+		"Mr. Fancy Pants.",
+		"TotalBiscuit's top hat.",
+		"Tentacle rape.",
+		"Illegal immigrants.",
+		"Skullcrusher Mountain.",
+		"FUNimation.",
+		"Penn and Teller.",
+		"An 8-ball.",
+		"A Facebook stalker.",
+		"Talking like a pirate.",
+		"A 3am phone call.",
+		"Rule 34.",
+		"Narutards.",
+		"Dead catgirls.",
+		"The smallest, whitest dick.",
+		"Nuns.",
+		"Bed wetting.",
+		"Ezreal's hot sugary ass.",
+		"Hello Kitty.",
+		"Tots.",
+		"Getting drunk before noon.",
+		"Clown strippers.",
+		"KERMIT FLAIL.",
+		"Fruit Fuckers.",
+		"Beer Pong.",
+		"Using hot sauce as lube.",
+		"Premature ejaculation.",
+		"Bounty, the Quicker Picker Upper.",
+		"Smooth jazz.",
+		"Bleeding Anuses.",
+		"A spoon that is too big.",
+		"Soviet Russia.",
+		"Not being pregnant.",
+		"Indiana Jones.",
+		"Hentai.",
+		"Surgeon Simulator 2013.",
+		"Tengen Toppa Gurren Lagann.",
+		"Mewtwo.",
+		"The Columbine Shooting.",
+		"Cowboy Bebop.",
+		"Fullmetal Alchemist.",
+		"Futanari.",
+		"Mr. Hankey the Christmas Poo.",
+		"Vash the Stampede.",
+		"Two midgets stacked up pretending to be one person.",
+		"Sarah Fuckin' Palin.",
+		"The Bible.",
+		"Naruto.",
+		"A giant horse cock.",
+		"Minecraft.",
+		"A wet paper towel.",
+		"Xyzzy playing around with gender roles.",
+		"Four Loko.",
+		"Mario brutally murdering Sonic.",
+		"Sonic brutally murdering Mario.",
+		"Idiots who don't seem to realize that Avatar: The Last Airbender isn't really an anime.",
+		"A fat middle-aged man in a Sailor Moon costume.",
+		"The world's tallest midget.",
+		"Yu-Gi-Oh! The Abridged Series.",
+		"OVER 9000!!",
+		"Aya Hirano being gang-banged by her entire band.",
+		"A juice box.",
+		"Sex.",
+		"\". . . .\".",
+		"Pacific Rim.",
+		"Reddit.",
+		"Novelty Twitter accounts.",
+		"A mindfuck.",
+		"Olmec.",
+		"A Hello Kitty! vibrator.",
+		"Reading the manual.",
+		"Type-C Tetris music.",
+		"The Death Note.",
+		"YouTube.",
+		"South Korea.",
+		"Being eaten by a titan.",
+		"A fountain of vomit.",
+		"DeviantArt.",
+		"The Hare Hare Yukai dance.",
+		"Fart science.",
+		"A big wet pink laser sword.",
+		"Sonic the Hedgehog.",
+		"A brief moment of aptitude.",
+		"Fuck you, I do what I want.",
+		"FUCK YOU, I'M SPIDERMAN!",
+		"StarFox.",
+		"Santa Christ.",
+		"PetSmart.",
+		"Getting mauled by a mountain lion AND a grizzly bear at the same time.",
+		"Glenn Beck being torn apart by zombies.",
+		"Going full retard.",
+		"A tub of Vaseline.",
+		"Ham?",
+		"Sex with strangers.",
+		"Getting your penis cut in half.",
+		"Literally going to Hell.",
+		"Being frozen today.",
+		"Bees. My God.",
+		"Cousin marriage.",
+		"4Kids.",
+		"Chuck Norris.",
+		"My mom.",
+		"My penis catching fire.",
+		"Lesbians.",
+		"A smaller, whiter dick.",
+		"A pretty epic poo.",
+		"A couch stinking of naked people.",
+		"A beautiful little moment.",
+		"John Madden.",
+		"Bees!",
+		"Watching FLCL while tripping on acid.",
+		"A killer rabbit.",
+		"Your mom.",
+		"Sticking your finger up her ass.",
+		"A tiny white dick.",
+		"Maple syrup.",
+		"A tree.",
+		"Standing outside the gates of the White House completely naked with a revolver in your hand.",
+		"A zombie fisherman.",
+		"A mile-long penis.",
+		"An awkward slash fic between The Nostalgia Critic and The Angry Video Game Nerd.",
+		"An obscure reference only two people will get.",
+		"Lara Croft.",
+		"Anal tearing.",
+		"Catholic priests who drink, smoke, and carry guns.",
+		"Stick figure porn.",
+		"A delicious baby.",
+		"The elephant in the room.",
+		"A butt egg.",
+		"A street cleaning simulator.",
+		"The Angry Video Game Nerd.",
+		"The Nostalgia Critic.",
+		"The Power Glove.",
+		"Your virgin soul.",
+		"An expensive rental costume.",
+		"A bird fucking a horse.",
+		"A Big Lipped Alligator Moment.",
+		"Time travel.",
+		"A baseball to the nuts.",
+		"A testicle examination.",
+		"Mountain Dew.",
+		"Surprise blowjobs.",
+		"Space Core.",
+		"Engrish.",
+		"A dead meme.",
+		"Duck Hunt.",
+		"Twincest.",
+		"DOTA 2.",
+		"Being banned from /r/pyongyang.",
+		"That one episode of CSI.",
+		"Drills for hands.",
+		"Asian cock.",
+		"The lost city of Atlantis.",
+		"Holy dildos.",
+		"George Costanza.",
+		"Dr. Phil.",
+		"The sound a single ThunderStix® makes.",
+		"The PS4.",
+		"The Wii U.",
+		"The SNES.",
+		"The NES.",
+		"Show me your tits!",
+		"The SEGA Genesis.",
+		"Thanking your sex slaves.",
+		"The PSX.",
+		"The Duck Hunt dog.",
+		"Getting off on anime porn.",
+		"Toilet paper.",
+		"Laxatives.",
+		"Mining for nose gold.",
+		"The Teenage Mutant Ninja Turtles.",
+		"Taking a seat with Chris Hansen.",
+		"A big floppy donkey dick.",
+		"A Cleveland steamer.",
+		"The Village People."
+	]
+}

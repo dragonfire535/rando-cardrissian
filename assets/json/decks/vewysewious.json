@@ -1,0 +1,358 @@
+{
+	"name": "Very Serious",
+	"slug": "vewysewious",
+	"official": false,
+	"blackCards": [
+		{
+			"pick": 1,
+			"text": "_ for president!"
+		},
+		{
+			"pick": 1,
+			"text": "Have fun, don't be _."
+		},
+		{
+			"pick": 1,
+			"text": "Don't get mad, get _."
+		},
+		{
+			"pick": 2,
+			"text": "After I saw _, I needed _."
+		},
+		{
+			"pick": 1,
+			"text": "I'm an expert on _."
+		},
+		{
+			"pick": 1,
+			"text": "_ is the only thing that matters."
+		},
+		{
+			"pick": 1,
+			"text": "Cunnilungus and psychiatry brought us to _."
+		},
+		{
+			"pick": 1,
+			"text": "We'll always have _."
+		},
+		{
+			"pick": 1,
+			"text": "What mildy annoyed you today?"
+		},
+		{
+			"pick": 1,
+			"text": "Let's all rock out to the sounds of _."
+		},
+		{
+			"pick": 2,
+			"text": "_ uses _. It is SUPER EFFECTIVE!"
+		},
+		{
+			"pick": 1,
+			"text": "Take _, it will last longer."
+		},
+		{
+			"pick": 1,
+			"text": "_ is my worst habit."
+		},
+		{
+			"pick": 1,
+			"text": "It's the end of _ as we know it."
+		},
+		{
+			"pick": 1,
+			"text": "Everything's better with _."
+		},
+		{
+			"pick": 1,
+			"text": "What have you accomplished today?"
+		},
+		{
+			"pick": 1,
+			"text": "What would you taste like?"
+		},
+		{
+			"pick": 1,
+			"text": "Why are you frothing with rage?"
+		},
+		{
+			"pick": 1,
+			"text": "What made you happy today?"
+		},
+		{
+			"pick": 1,
+			"text": "My _ is too big!"
+		},
+		{
+			"pick": 3,
+			"text": "Best drink ever: One part _, three parts _, and a splash of _."
+		},
+		{
+			"pick": 1,
+			"text": "_ makes me uncomfortable."
+		},
+		{
+			"pick": 1,
+			"text": "Stop, drop, and _."
+		},
+		{
+			"pick": 1,
+			"text": "Think before you _."
+		},
+		{
+			"pick": 2,
+			"text": "A wild _ appeared! It used _!"
+		},
+		{
+			"pick": 1,
+			"text": "There's _ in my soup."
+		},
+		{
+			"pick": 2,
+			"text": "If life gives you _, make _."
+		},
+		{
+			"pick": 1,
+			"text": "Who needs a bidet when you have _?"
+		},
+		{
+			"pick": 1,
+			"text": "Kill it with _!"
+		},
+		{
+			"pick": 1,
+			"text": "You have my bow. AND MY _."
+		},
+		{
+			"pick": 1,
+			"text": "_? FRY. EYES."
+		},
+		{
+			"pick": 1,
+			"text": "VS: Where the _ happens!"
+		},
+		{
+			"pick": 1,
+			"text": "Yaar's mother is _."
+		},
+		{
+			"pick": 2,
+			"text": "The hills are alive with _ of _."
+		},
+		{
+			"pick": 2,
+			"text": "I thought being a _ was the best thing ever, until I became a _."
+		},
+		{
+			"pick": 1,
+			"text": "Live long and _."
+		},
+		{
+			"pick": 1,
+			"text": "I'm under the _."
+		},
+		{
+			"pick": 1,
+			"text": "Dogimo would give up _ to type a six sentence paragraph in a thread."
+		},
+		{
+			"pick": 1,
+			"text": "Simple dog ate and vomited _."
+		},
+		{
+			"pick": 2,
+			"text": "_ ALL THE _."
+		},
+		{
+			"pick": 2,
+			"text": "There were ALOT of _ doing _."
+		},
+		{
+			"pick": 2,
+			"text": "_ Jesus is the Jesus of _."
+		},
+		{
+			"pick": 2,
+			"text": "The forum nearly broke when _ posted _ in The Dead Thread."
+		},
+		{
+			"pick": 2,
+			"text": "A mod war about _ occurred during _."
+		},
+		{
+			"pick": 1,
+			"text": "Clean ALL the _."
+		},
+		{
+			"pick": 1,
+			"text": "The first rule of Jade Club is _."
+		},
+		{
+			"pick": 1,
+			"text": "_ in my pants."
+		},
+		{
+			"pick": 1,
+			"text": "We need to talk about your whole gallon of _."
+		},
+		{
+			"pick": 1,
+			"text": "When I was 25, I won an award for _."
+		},
+		{
+			"pick": 1,
+			"text": "I'm more awesome than a T-rex because of _."
+		},
+		{
+			"pick": 1,
+			"text": "Fuck you, I'm a _."
+		},
+		{
+			"pick": 1,
+			"text": "After Blue posted _ in chat, I never trusted his links again."
+		},
+		{
+			"pick": 1,
+			"text": "Roses and her hammer collection defeated an entire squadron of _."
+		},
+		{
+			"pick": 2,
+			"text": "Domo travelled across _ to win the prize of _."
+		},
+		{
+			"pick": 1,
+			"text": "I did _, like a fucking adult."
+		},
+		{
+			"pick": 2,
+			"text": "_ was banned from tinychat because of _."
+		},
+		{
+			"pick": 1,
+			"text": "No one likes me after I posted _ in the TMI thread."
+		},
+		{
+			"pick": 1,
+			"text": "I want _ in my mouflon RIGHT MEOW."
+		},
+		{
+			"pick": 2,
+			"text": "I CAN _ ACROSS THE _."
+		}
+	],
+	"whiteCards": [
+		"Doctor Who.",
+		"EXTERMINATE.",
+		"Fuck you, I'm a bear.",
+		"THE GODDAMN BATMAN.",
+		"Swinging an axe in the air while cornholing a bear.",
+		"Just the tip!",
+		"SCIENCE!!1!",
+		"Bearshark.",
+		"Trouser snakes.",
+		"The Power of Greyskull.",
+		"Drinking on live TV.",
+		"Mandatory Sex Party.",
+		"Games you can play with bricks.",
+		"Googly eyes on a cock.",
+		"Typing with your genitals.",
+		"Pirate hookers.",
+		"Fancy tampons.",
+		"Tinychat.",
+		"Moobs.",
+		"Boobs.",
+		"Standing next to short people to use them as armrests.",
+		"Hookers and blow.",
+		"Hello Kitty.",
+		"Tots.",
+		"Getting drunk before noon.",
+		"Clown strippers.",
+		"KERMIT FLAIL.",
+		"Premature ejaculation.",
+		"Bounty, the Quicker Picker Upper.",
+		"Bleeding Anuses.",
+		"A spoon that is too big.",
+		"Not being pregnant.",
+		"Show me your tits!",
+		"Thanking your sex slaves.",
+		"Chris Gaines.",
+		"WIIINES.",
+		"A Wende head tilt.",
+		"PooooooP!",
+		"Thundercunt.",
+		"Daddy foam.",
+		"The Great Dildo, Thor.",
+		"Landshark.",
+		"LYNCH LUPUS.",
+		"Barfstab.",
+		"A WHOLE GALLON OF BOOBS.",
+		"Bevis.",
+		"Tubemonster.",
+		"A really good booby weight.",
+		"Buttpirate Pokemon.",
+		"Queer Lesbian Jesus.",
+		"The establishment.",
+		"The revolution.",
+		"Ricardo.",
+		"Skittering ovaries.",
+		"Shooting heroin into my eyeballs.",
+		"A WHOLE GALLON.",
+		"Lewhora.",
+		"Poopcake.",
+		"Velociraptor.",
+		"Thundercunting.",
+		"Werewolf.",
+		"Cultist.",
+		"Very Serious Island.",
+		"COLLIN.",
+		"Ferngully.",
+		"Baby batter.",
+		"Sweater kittens.",
+		"Strawberry Shortcake sexing up a Carebear and giving birth to NyanCat.",
+		"Meat curtains.",
+		"HODOR.",
+		"Vejazzled vagina.",
+		"Butt oranges.",
+		"Simple dog.",
+		"LOUD NOISES.",
+		"Centaur Therapist Jesus.",
+		"GOATS.",
+		"Blowjob Jesus.",
+		"Welcome Taco.",
+		"Making a random guess in Werewolf that gets you killed later.",
+		"Dropbears.",
+		"Shenaniganty.",
+		"I AM HOW BABIES ARE MADE.",
+		"INTERNET FOREVER!",
+		"The jitters you get before a meetup.",
+		"Droopums.",
+		"Nonni's mantis.",
+		"Noble whore.",
+		"Kangaroo stripper.",
+		"Ginger baby.",
+		"Drunk foruming.",
+		"Readying my torch for burnination.",
+		"Dickcheese.",
+		"In a sneaky hate spiral.",
+		"Certified Breast Maintenance Engineer.",
+		"A test tube baby.",
+		"Dancing naked.",
+		"Moist and Juicy.",
+		"Orgy.",
+		"Lotion.",
+		"Rapey dolphin.",
+		"Handbra.",
+		"Werepoo.",
+		"More bandaids.",
+		"A moose giving birth in Maggly's yard.",
+		"Curious hands.",
+		"Fuckweasel.",
+		"Tears of manly pain.",
+		"Spagbag.",
+		"Surprise penis.",
+		"Cthulhu.",
+		"Mr. Tinycheeks.",
+		"SEX.",
+		"An Olive Ewe."
+	]
+}
