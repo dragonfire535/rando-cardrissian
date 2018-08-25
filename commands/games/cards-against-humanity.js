@@ -46,6 +46,7 @@ module.exports = class CardsAgainstHumanityCommand extends Command {
 		if (this.client.games.has(msg.channel.id)) return msg.util.reply('Only one game may be occurring per channel.');
 		if (blacklist && whitelist) return msg.util.reply('Both a blacklist and a whitelist? That sounds weird.');
 		const { blackCards, whiteCards } = this.client.decks.generate(blacklist, whitelist);
+		if (!blackCards.length || !whiteCards.length) return msg.util.reply('Your filter filters out every card...');
 		this.client.games.set(msg.channel.id, new Game(msg.channel, whiteCards, blackCards, 'Black'));
 		const game = this.client.games.get(msg.channel.id);
 		try {
