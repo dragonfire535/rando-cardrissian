@@ -6,17 +6,13 @@ const client = new Client({
 	disableEveryone: true,
 	disabledEvents: ['TYPING_START']
 });
-const activities = require('./assets/json/activity');
 const { stripIndents } = require('common-tags');
 
 client.setup();
 
 client.on('ready', () => {
 	console.log(`[READY] Logged in as ${client.user.tag}! (${client.user.id})`);
-	client.setInterval(() => {
-		const activity = activities[Math.floor(Math.random() * activities.length)];
-		client.user.setActivity(activity.text, { type: activity.type });
-	}, 60000);
+	client.user.setActivity('Cards Against Humanity');
 });
 
 client.on('disconnect', event => {
