@@ -29,12 +29,14 @@ module.exports = class CardsAgainstHumanityCommand extends Command {
 				{
 					id: 'blacklist',
 					match: 'option',
-					flag: ['--blacklist', '-bl']
+					flag: ['--blacklist', '-bl'],
+					type: 'lowercase'
 				},
 				{
 					id: 'whitelist',
 					match: 'option',
-					flag: ['--whitelist', '-wl']
+					flag: ['--whitelist', '-wl'],
+					type: 'lowercase'
 				}
 			]
 		});

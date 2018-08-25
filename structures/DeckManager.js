@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const { Collection } = require('discord.js');
+const { removeFromArray } = require('../util/Util');
 
 module.exports = class DeckManager extends Collection {
 	constructor(iterable) {
@@ -21,9 +22,27 @@ module.exports = class DeckManager extends Collection {
 	generate(blacklist, whitelist) {
 		if (this.cache && !blacklist.length && !whitelist.length) return this.cache;
 		blacklist = blacklist ? blacklist.split(',') : [];
-		blacklist.push('apples');
-		whitelist = whitelist ? whitelist.split(',') : null;
-		const filtered = this.filter(deck => whitelist ? whitelist.includes(deck.id) : !blacklist.includes(deck.id));
+		whitelist = whitelist ? whitelist.split(',') : [];
+		if (blacklist.includes('official')) {
+			removeFromArray(blacklist, 'official');
+			blacklist.push(...this.officialIDs());
+		}
+		if (blacklist.includes('custom')) {
+			removeFromArray(blacklist, 'custom');
+			blacklist.push(...this.officialIDs(true));
+		}
+		if (whitelist.includes('official')) {
+			removeFromArray(whitelist, 'official');
+			whitelist.push(...this.officialIDs());
+		}
+		if (whitelist.includes('custom')) {
+			removeFromArray(whitelist, 'custom');
+			whitelist.push(...this.officialIDs(true));
+		}
+		const filtered = this.filter(deck => {
+			if (!whitelist.includes('apples') && deck.id === 'apples') return false;
+			return whitelist.length ? whitelist.includes(deck.id) : !blacklist.includes(deck.id);
+		});
 		const blackCards = [];
 		const whiteCards = [];
 		for (const deck of filtered.values()) {
@@ -31,7 +50,11 @@ module.exports = class DeckManager extends Collection {
 			if (deck.whiteCards.length) whiteCards.push(...deck.whiteCards);
 		}
 		const result = { blackCards, whiteCards };
-		if (!this.cache && !blacklist.length) this.cache = result;
+		if (!this.cache && !blacklist.length && !whitelist.length) this.cache = result;
 		return result;
+	}
+
+	officialIDs(reverse = false) {
+		return this.filter(deck => reverse ? !deck.official : deck.offical).map(deck => deck.id);
 	}
 };

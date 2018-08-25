@@ -1,6 +1,7 @@
 const { Collection } = require('discord.js');
 const Player = require('./Player');
 const Deck = require('./Deck');
+const { removeFromArray } = require('../util/Util');
 const { SUCCESS_EMOJI_ID, FAILURE_EMOJI_ID } = process.env;
 
 module.exports = class Game {
@@ -35,7 +36,7 @@ module.exports = class Game {
 
 	kick(player) {
 		this.players.delete(player.id);
-		this.czars.splice(this.czars.indexOf(player.id), 1);
+		removeFromArray(this.czars, player.id);
 	}
 
 	async awaitPlayers(msg, bot) {

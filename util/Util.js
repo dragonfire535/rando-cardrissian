@@ -21,6 +21,10 @@ module.exports = class Util {
 		return `${hrs.padStart(2, '0')}:${min.padStart(2, '0')}:${sec.padStart(2, '0')}`;
 	}
 
+	static removeFromArray(arr, value) {
+		return arr.splice(arr.indexOf(value), 1);
+	}
+
 	static firstUpperCase(text) {
 		return `${text.charAt(0).toUpperCase()}${text.slice(1)}`;
 	}
