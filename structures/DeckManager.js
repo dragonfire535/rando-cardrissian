@@ -20,9 +20,9 @@ module.exports = class DeckManager extends Collection {
 	}
 
 	generate(blacklist, whitelist) {
-		if (this.cache && !blacklist.length && !whitelist.length) return this.cache;
 		blacklist = blacklist ? blacklist.split(',') : [];
 		whitelist = whitelist ? whitelist.split(',') : [];
+		if (this.cache && !blacklist.length && !whitelist.length) return this.cache;
 		if (blacklist.includes('official')) {
 			removeFromArray(blacklist, 'official');
 			blacklist.push(...this.officialIDs());
