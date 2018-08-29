@@ -36,6 +36,7 @@
 		"common-tags": "^1.8.0",
 		"discord-akairo": "github:1Computer1/discord-akairo",
 		"discord.js": "github:discordjs/discord.js",
+		"dotenv": "^6.0.0",
 		"erlpack": "github:discordapp/erlpack",
 		"node-superfetch": "^0.1.4",
 		"zlib-sync": "^0.1.4"

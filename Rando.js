@@ -1,3 +1,4 @@
+require('dotenv').config();
 const { RANDO_TOKEN, RANDO_PREFIX, OWNERS, INVITE } = process.env;
 const Client = require('./structures/Client');
 const client = new Client({
