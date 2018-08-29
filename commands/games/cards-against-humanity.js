@@ -42,12 +42,12 @@ module.exports = class CardsAgainstHumanityCommand extends Command {
 		});
 	}
 
-	async exec(msg, { maxPts, bot, blacklist, whitelist }) { // eslint-disable-line complexity
+	async exec(msg, { maxPts, bot, blacklist, whitelist }, blackType = 'Black') { // eslint-disable-line complexity
 		if (this.client.games.has(msg.channel.id)) return msg.util.reply('Only one game may be occurring per channel.');
 		if (blacklist && whitelist) return msg.util.reply('Both a blacklist and a whitelist? That sounds weird.');
 		const { blackCards, whiteCards } = this.client.decks.generate(blacklist, whitelist);
 		if (!blackCards.length || !whiteCards.length) return msg.util.reply('Your filter filters out every card...');
-		this.client.games.set(msg.channel.id, new Game(msg.channel, whiteCards, blackCards, 'Black'));
+		this.client.games.set(msg.channel.id, new Game(msg.channel, whiteCards, blackCards, blackType));
 		const game = this.client.games.get(msg.channel.id);
 		try {
 			const awaitedPlayers = await game.awaitPlayers(msg, bot ? this.client.user : null);
@@ -69,7 +69,7 @@ module.exports = class CardsAgainstHumanityCommand extends Command {
 				const black = game.blackDeck.draw();
 				await msg.util.sendNew(stripIndents`
 					The card czar will be ${czar.user}!
-					The Black Card is: **${escapeMarkdown(black.text)}**
+					The ${blackType} Card is: **${escapeMarkdown(black.text)}**
 
 					Sending DMs...
 				`);
@@ -83,7 +83,7 @@ module.exports = class CardsAgainstHumanityCommand extends Command {
 				const cards = shuffle(chosenCards);
 				await msg.util.sendNew(stripIndents`
 					${czar.user}, which card${black.pick > 1 ? 's' : ''} do you pick?
-					**Black Card**: ${escapeMarkdown(black.text)}
+					**${blackType} Card**: ${escapeMarkdown(black.text)}
 
 					${cards.map((card, i) => `**${i + 1}.** ${card.cards.join(' | ')}`).join('\n')}
 				`);
