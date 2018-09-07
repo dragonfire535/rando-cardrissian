@@ -83,7 +83,7 @@ module.exports = class CardsAgainstHumanityCommand extends Command {
 				const cards = shuffle(chosenCards);
 				await msg.util.sendNew(stripIndents`
 					${czar.user}, which card${black.pick > 1 ? 's' : ''} do you pick?
-					**${blackType} Card**: ${escapeMarkdown(black.text)}
+					**${blackType} Card:** ${escapeMarkdown(black.text)}
 
 					${cards.map((card, i) => `**${i + 1}.** ${card.cards.join(' | ')}`).join('\n')}
 				`);

@@ -14,28 +14,28 @@ primary feature is Cards Against Humanity, but Apples to Apples is also availabl
 ## Commands (13)
 ### Games:
 
-* **apples-to-apples**: Compete to see who can come up with the best card to match an adjective.
-* **cards-against-humanity**: Compete to see who can come up with the best card to fill in the blank.
+* **apples-to-apples:** Compete to see who can come up with the best card to match an adjective.
+* **cards-against-humanity:** Compete to see who can come up with the best card to fill in the blank.
 
 ### Info:
 
-* **deck-info**: Responds with detailed information on a deck.
-* **deck-list**: Responds with a list of all decks, with query.
-* **leaderboard**: Displays the current leaderboard for this channel's game.
+* **deck-info:** Responds with detailed information on a deck.
+* **deck-list:** Responds with a list of all decks, with query.
+* **leaderboard:** Displays the current leaderboard for this channel's game.
 
 ### Other:
 
-* **hi**: Hello.
+* **hi:** Hello.
 
 ### Util:
 
-* **changelog**: Responds with the bot's latest 10 commits.
-* **donate**: Responds with the bot's donation links.
-* **eval**: Executes JavaScript code.
-* **help**: Displays a list of available commands, or detailed information for a specific command.
-* **info**: Responds with detailed bot information.
-* **invite**: Responds with the bot's invite links.
-* **ping**: Checks the bot's ping to the Discord server.
+* **changelog:** Responds with the bot's latest 10 commits.
+* **donate:** Responds with the bot's donation links.
+* **eval:** Executes JavaScript code.
+* **help:** Displays a list of available commands, or detailed information for a specific command.
+* **info:** Responds with detailed bot information.
+* **invite:** Responds with the bot's invite links.
+* **ping:** Checks the bot's ping to the Discord server.
 
 ## Licensing
 The bot is licensed under the GPL 3.0 license. See the file `LICENSE` for more
