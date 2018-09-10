@@ -29,7 +29,7 @@
 	},
 	"homepage": "https://github.com/dragonfire535/rando-cardrissian#readme",
 	"engines": {
-		"node": ">=10.1.0"
+		"node": ">=10"
 	},
 	"dependencies": {
 		"@discordjs/uws": "^10.149.0",
