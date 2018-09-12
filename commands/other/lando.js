@@ -6,7 +6,7 @@ module.exports = class LandoCommand extends Command {
 	constructor() {
 		super('lando', {
 			aliases: ['lando', 'lando-calrissian', 'rando-cardrissian', 'rando'],
-			category: 'random',
+			category: 'other',
 			description: 'Responds with a random image of Lando Calrissian.',
 			clientPermissions: ['ATTACH_FILES']
 		});
