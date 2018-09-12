@@ -9,9 +9,10 @@
 Rando Cardrissian is a Discord bot coded in JavaScript with
 [discord.js](https://discord.js.org/) using the
 [Akairo](https://github.com/1Computer1/discord-akairo) command framework. The
-primary feature is Cards Against Humanity, but Apples to Apples is also available.
+primary feature is Cards Against Humanity, but Apples to Apples is also
+available.
 
-## Commands (13)
+## Commands (14)
 ### Games:
 
 * **apples-to-apples:** Compete to see who can come up with the best card to match an adjective.
@@ -26,6 +27,7 @@ primary feature is Cards Against Humanity, but Apples to Apples is also availabl
 ### Other:
 
 * **hi:** Hello.
+* **lando:** Responds with a random image of Lando Calrissian.
 
 ### Util:
 
