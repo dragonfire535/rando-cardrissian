@@ -38,7 +38,7 @@
 		"discord.js": "github:discordjs/discord.js",
 		"dotenv": "^6.0.0",
 		"erlpack": "github:discordapp/erlpack",
-		"node-superfetch": "^0.1.5",
+		"node-superfetch": "^0.1.6",
 		"zlib-sync": "^0.1.4"
 	},
 	"devDependencies": {
