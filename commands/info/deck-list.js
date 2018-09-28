@@ -6,16 +6,14 @@ module.exports = class DeckListCommand extends Command {
 		super('deck-list', {
 			aliases: ['deck-list', 'decks'],
 			category: 'info',
-			description: 'Responds with a list of all decks, with query.',
+			description: 'Responds with a list of all decks based on your query.',
 			args: [
 				{
 					id: 'query',
 					prompt: {
 						start: 'What deck would you like to search for?',
-						retry: 'You provided an invalid query. Please try again.',
-						optional: true
+						retry: 'You provided an invalid query. Please try again.'
 					},
-					default: '',
 					type: 'string'
 				}
 			]
