@@ -13,7 +13,7 @@ client.setup();
 
 client.on('ready', () => {
 	console.log(`[READY] Logged in as ${client.user.tag}! (${client.user.id})`);
-	client.user.setActivity('Cards Against Humanity');
+	client.setInterval(() => client.user.setActivity('Cards Against Humanity'), 60000);
 });
 
 client.on('disconnect', event => {
