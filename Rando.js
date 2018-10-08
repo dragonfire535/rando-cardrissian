@@ -35,8 +35,3 @@ client.commandHandler.on('error', (err, msg, command) => {
 });
 
 client.login(RANDO_TOKEN);
-
-process.on('unhandledRejection', err => {
-	client.logger.error(`[FATAL] UNHANDLED PROMISE REJECTION:\n${err.stack}`);
-	process.exit(1);
-});
