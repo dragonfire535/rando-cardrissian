@@ -12,21 +12,21 @@ const { stripIndents } = require('common-tags');
 client.setup();
 
 client.on('ready', () => {
-	console.log(`[READY] Logged in as ${client.user.tag}! (${client.user.id})`);
+	client.logger.info(`[READY] Logged in as ${client.user.tag}! ID: ${client.user.id}`);
 	client.setInterval(() => client.user.setActivity('Cards Against Humanity'), 60000);
 });
 
 client.on('disconnect', event => {
-	console.error(`[DISCONNECT] Disconnected with code ${event.code}.`);
+	client.logger.error(`[DISCONNECT] Disconnected with code ${event.code}.`);
 	process.exit(0);
 });
 
-client.on('error', err => console.error('[ERROR]', err));
+client.on('error', err => client.logger.error(err));
 
-client.on('warn', err => console.warn('[WARNING]', err));
+client.on('warn', warn => client.logger.warn(warn));
 
-client.commandHandler.on('error', (err, msg) => {
-	console.error('[COMMAND ERROR]', err);
+client.commandHandler.on('error', (err, msg, command) => {
+	client.logger.error(`[COMMAND${command ? `:${command.name}` : ''}]\n${err.stack}`);
 	msg.reply(stripIndents`
 		An error occurred while running the command: \`${err.message}\`
 		You shouldn't ever receive an error like this.
@@ -37,6 +37,6 @@ client.commandHandler.on('error', (err, msg) => {
 client.login(RANDO_TOKEN);
 
 process.on('unhandledRejection', err => {
-	console.error('[FATAL] Unhandled Promise Rejection.', err);
+	client.logger.error(`[FATAL] UNHANDLED PROMISE REJECTION:\n${err.stack}`);
 	process.exit(1);
 });

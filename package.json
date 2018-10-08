@@ -1,6 +1,6 @@
 {
 	"name": "rando-cardrissian",
-	"version": "6.4.4",
+	"version": "6.4.5",
 	"description": "Cards Against Humanity, but for Discord!",
 	"main": "Rando.js",
 	"scripts": {
@@ -41,6 +41,7 @@
 		"moment": "^2.22.2",
 		"moment-duration-format": "^2.2.2",
 		"node-superfetch": "^0.1.9",
+		"winston": "3.1.0",
 		"zlib-sync": "^0.1.4"
 	},
 	"devDependencies": {
