@@ -113,7 +113,7 @@ module.exports = class Player {
 			**${this.game.blackType} Card:** ${escapeMarkdown(black.text)}
 			**Card Czar:** ${this.game.czar.user.username}
 			**Awesome Points:** ${this.points}
-			**Strikes:** ${this.strikes} (Get 3, and you get kicked!)
+			**Strikes:** ${this.strikes}/3
 
 			Pick **${black.pick}** card${black.pick > 1 ? 's' : ''}!
 			_Type \`gamble\` to exchange a point for an extra play._
