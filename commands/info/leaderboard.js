@@ -28,7 +28,7 @@ module.exports = class LeaderboardCommand extends Command {
 			return `**${i}.** ${player.user.tag} (${player.points})`;
 		});
 		return msg.util.send(stripIndents`
-			__**Leaderboard**__:
+			__**Leaderboard:**__
 			${board.join('\n')}
 		`);
 	}

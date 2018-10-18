@@ -26,7 +26,7 @@ module.exports = class DeckListCommand extends Command {
 		if (query) results = this.client.decks.filter(d => d.id.includes(search) || d.name.toLowerCase().includes(search));
 		if (!results.size) return msg.util.send('Could not find any results.');
 		return msg.util.send(stripIndents`
-			__**Deck List**__: _(${results.size} Results)_
+			__**Deck List:**__ _(${results.size} Results)_
 			${results.map(deck => `${deck.name} (${deck.id})`).join('\n')}
 		`);
 	}
