@@ -15,7 +15,7 @@ module.exports = class PingCommand extends Command {
 		const ping = Math.round(message.createdTimestamp - msg.createdTimestamp);
 		return message.edit(stripIndents`
 			🏓 P${'o'.repeat(Math.ceil(Math.min(ping / 100, 1800)))}ng! \`${ping}ms\`
-			Heartbeat: \`${Math.round(this.client.ping)}ms\`
+			Heartbeat: \`${Math.round(this.client.ws.ping)}ms\`
 		`);
 	}
 };
