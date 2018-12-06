@@ -36,7 +36,7 @@
 		"common-tags": "^1.8.0",
 		"discord-akairo": "github:1Computer1/discord-akairo",
 		"discord.js": "github:discordjs/discord.js",
-		"dotenv": "^6.1.0",
+		"dotenv": "^6.2.0",
 		"erlpack": "github:discordapp/erlpack",
 		"moment": "^2.22.2",
 		"moment-duration-format": "^2.2.2",
