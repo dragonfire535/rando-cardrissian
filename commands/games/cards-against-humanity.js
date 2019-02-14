@@ -101,8 +101,10 @@ module.exports = class CardsAgainstHumanityCommand extends Command {
 					await msg.util.sendNew('Hmm... No one wins. Dealing back cards...');
 					for (const pick of cards) {
 						for (const card of pick.cards) {
+							/* eslint-disable max-depth */
 							if (!game.players.has(pick.id)) continue;
 							game.players.get(pick.id).hand.add(card);
+							/* eslint-enable max-depth */
 						}
 					}
 					game.czar.strikes++;
