@@ -100,7 +100,10 @@ module.exports = class CardsAgainstHumanityCommand extends Command {
 				if (!chosen.size) {
 					await msg.util.sendNew('Hmm... No one wins. Dealing back cards...');
 					for (const pick of cards) {
-						for (const card of pick.cards) game.players.get(pick.id).hand.add(card);
+						for (const card of pick.cards) {
+							if (!game.players.has(pick.id)) continue;
+							game.players.get(pick.id).hand.add(card);
+						}
 					}
 					game.czar.strikes++;
 					continue;
