@@ -1,6 +1,6 @@
 {
 	"name": "rando-cardrissian",
-	"version": "6.4.9",
+	"version": "6.4.10",
 	"description": "Cards Against Humanity, but for Discord!",
 	"main": "Rando.js",
 	"scripts": {
@@ -35,9 +35,9 @@
 		"common-tags": "^1.8.0",
 		"discord-akairo": "github:1Computer1/discord-akairo",
 		"discord.js": "github:discordjs/discord.js",
-		"dotenv": "^8.1.0",
+		"dotenv": "^8.2.0",
 		"moment": "^2.24.0",
-		"moment-duration-format": "^2.2.2",
+		"moment-duration-format": "^2.3.2",
 		"node-superfetch": "^0.1.9",
 		"winston": "^3.2.1"
 	},
