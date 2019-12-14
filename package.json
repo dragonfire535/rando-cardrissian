@@ -1,6 +1,6 @@
 {
 	"name": "rando-cardrissian",
-	"version": "6.4.11",
+	"version": "6.4.12",
 	"description": "Cards Against Humanity, but for Discord!",
 	"main": "Rando.js",
 	"scripts": {
@@ -42,9 +42,9 @@
 		"winston": "^3.2.1"
 	},
 	"devDependencies": {
-		"eslint": "^5.16.0",
-		"eslint-config-amber": "^2.0.0",
-		"eslint-plugin-json": "^1.4.0"
+		"eslint": "^6.7.2",
+		"eslint-config-amber": "^2.0.1",
+		"eslint-plugin-json": "^2.0.1"
 	},
 	"eslintConfig": {
 		"extends": "amber",
