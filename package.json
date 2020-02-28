@@ -1,6 +1,6 @@
 {
 	"name": "rando-cardrissian",
-	"version": "6.5.1",
+	"version": "6.5.2",
 	"description": "Cards Against Humanity, but for Discord!",
 	"main": "Rando.js",
 	"scripts": {
