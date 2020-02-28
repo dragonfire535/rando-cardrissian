@@ -31,7 +31,7 @@ module.exports = class HelpCommand extends Command {
 				.setColor(0x00AE86);
 			let cmdCount = 0;
 			for (const category of this.handler.categories.values()) {
-				const owner = msg.author.id === this.client.ownerID;
+				const owner = this.client.ownerID.includes(msg.author.id);
 				const commands = category.filter(cmd => owner ? true : !cmd.ownerOnly);
 				if (!commands.size) continue;
 				cmdCount += commands.size;
