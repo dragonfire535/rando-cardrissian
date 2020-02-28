@@ -4,7 +4,6 @@ const Client = require('./structures/Client');
 const client = new Client({
 	prefix: RANDO_PREFIX.split('||'),
 	ownerID: OWNERS.split(','),
-	disableEveryone: true,
 	disabledEvents: ['TYPING_START']
 });
 const { stripIndents } = require('common-tags');

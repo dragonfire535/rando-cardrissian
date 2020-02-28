@@ -28,13 +28,22 @@ module.exports = class HelpCommand extends Command {
 		if (!command) {
 			const embed = new MessageEmbed()
 				.setTitle('Command List')
-				.setColor(0x00AE86)
-				.setFooter(`${this.handler.modules.size} Commands`);
+				.setColor(0x00AE86);
+			let cmdCount = 0;
 			for (const category of this.handler.categories.values()) {
+				const owner = msg.author.id === this.client.ownerID;
+				const commands = category.filter(cmd => owner ? true : !cmd.ownerOnly);
+				if (!commands.size) continue;
+				cmdCount += commands.size;
 				embed.addField(
 					`❯ ${this.parseCategoryName(category.id)}`,
-					category.map(cmd => `\`${cmd.id}\``).join(', ') || 'None'
+					commands.map(cmd => `\`${cmd.id}\``).join(', ') || 'None'
 				);
+			}
+			if (cmdCount === this.handler.modules.size) {
+				embed.setFooter(`${this.handler.modules.size} Commands`);
+			} else {
+				embed.setFooter(`${this.handler.modules.size} Commands (${cmdCount} Shown)`);
 			}
 			try {
 				const msgs = [];

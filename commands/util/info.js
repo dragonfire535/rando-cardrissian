@@ -23,22 +23,22 @@ module.exports = class InfoCommand extends Command {
 			.addField('❯ Servers', this.client.guilds.cache.size, true)
 			.addField('❯ Shards', this.client.options.shardCount, true)
 			.addField('❯ Commands', this.handler.modules.size, true)
-			.addField('❯ Home Server', INVITE ? `[Here](${INVITE})` : 'None', true)
+			.addField('❯ Home Server', INVITE ? `[Invite](${INVITE})` : 'None', true)
 			.addField('❯ Source Code',
-				source ? `[Here](https://github.com/${RANDO_GITHUB_REPO_USERNAME}/${RANDO_GITHUB_REPO_NAME})` : 'N/A', true)
+				source ? `[Github](https://github.com/${RANDO_GITHUB_REPO_USERNAME}/${RANDO_GITHUB_REPO_NAME})` : 'N/A', true)
 			.addField('❯ Memory Usage', `${Math.round(process.memoryUsage().heapUsed / 1024 / 1024)}MB`, true)
 			.addField('❯ Uptime', moment.duration(this.client.uptime).format('d:hh:mm:ss'), true)
 			.addField('❯ Version', `v${version}`, true)
 			.addField('❯ Node Version', process.version, true)
-			.addField('❯ Dependencies', this.parseDependencies());
+			.addField('❯ Dependencies', this.parseDependencies(dependencies));
 		return msg.util.send({ embed });
 	}
 
-	parseDependencies() {
-		return Object.entries(dependencies).map(dep => {
+	parseDependencies(deps) {
+		return Object.entries(deps).map(dep => {
 			if (dep[1].startsWith('github:')) {
 				const repo = dep[1].replace('github:', '').split('/');
-				return `[${dep[0]}](https://github.com/${repo[0]}/${repo[1].replace(/#.+/, '')})`;
+				return `[${dep[0]}](https://github.com/${repo[0]}/${repo[1].replace(/#(.+)/, '/tree/$1')`;
 			}
 			return `[${dep[0]}](https://npmjs.com/${dep[0]})`;
 		}).join(', ');
