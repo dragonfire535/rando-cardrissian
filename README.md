@@ -10,7 +10,7 @@ Rando Cardrissian is a Discord bot coded in JavaScript with
 primary feature is Cards Against Humanity, but Apples to Apples is also
 available.
 
-## Commands (15)
+## Commands (9)
 ### Games:
 
 * **apples-to-apples:** Compete to see who can come up with the best card to match an adjective.
@@ -24,18 +24,12 @@ available.
 
 ### Other:
 
-* **hi:** Hello.
 * **lando:** Responds with a random image of Lando Calrissian.
 
 ### Util:
 
-* **changelog:** Responds with the bot's latest 10 commits.
-* **donate:** Responds with the bot's donation links.
-* **eval:** Executes JavaScript code.
 * **help:** Displays a list of available commands, or detailed information for a specific command.
 * **info:** Responds with detailed bot information.
-* **invite:** Responds with the bot's invite links.
-* **ip:** Responds with the IP address the bot\'s server is running on.
 * **ping:** Checks the bot's ping to the Discord server.
 
 ## Licensing

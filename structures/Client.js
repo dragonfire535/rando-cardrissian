@@ -3,7 +3,6 @@ const { stripIndents } = require('common-tags');
 const winston = require('winston');
 const path = require('path');
 const DeckManager = require('./DeckManager');
-const CodeType = require('../types/code');
 
 module.exports = class Client extends AkairoClient {
 	constructor(options) {
@@ -48,7 +47,6 @@ module.exports = class Client extends AkairoClient {
 
 	setup() {
 		this.commandHandler.loadAll();
-		this.commandHandler.resolver.addType('code', CodeType);
 		this.decks.register(path.join(__dirname, '..', 'assets', 'json', 'decks'));
 	}
 };
