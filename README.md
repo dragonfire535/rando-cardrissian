@@ -1,6 +1,7 @@
 # Rando Cardrissian
 [![Build Status](https://travis-ci.org/dragonfire535/rando-cardrissian.svg?branch=master)](https://travis-ci.org/dragonfire535/rando-cardrissian)
 [![Donate on PayPal](https://img.shields.io/badge/paypal-donate-blue.svg)](https://www.paypal.me/dragonfire535)
+[![Discord](https://discordapp.com/api/guilds/252317073814978561/embed.png)](https://discord.gg/mTr83zt)
 
 > This bot is not available for invite.
 
@@ -10,7 +11,7 @@ Rando Cardrissian is a Discord bot coded in JavaScript with
 primary feature is Cards Against Humanity, but Apples to Apples is also
 available.
 
-## Commands (9)
+## Commands (10)
 ### Games:
 
 * **apples-to-apples:** Compete to see who can come up with the best card to match an adjective.
@@ -28,6 +29,7 @@ available.
 
 ### Util:
 
+* **eval:** Evaluates code. (Owner-Only)
 * **help:** Displays a list of available commands, or detailed information for a specific command.
 * **info:** Responds with detailed bot information.
 * **ping:** Checks the bot's ping to the Discord server.
