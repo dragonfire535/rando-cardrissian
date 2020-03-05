@@ -34,6 +34,24 @@ available.
 * **info:** Responds with detailed bot information.
 * **ping:** Checks the bot's ping to the Discord server.
 
+## Credit
+
+This list is a list of every single site, user, and API used
+to make Rando possible, and the commands they're used in. Thank you to everyone
+here.
+
+- [1Computer1](https://github.com/1Computer1)
+	* eval ([Code](https://github.com/1Computer1/hoshi/blob/master/src/commands/owner/eval.js))
+- [Apples to Apples](https://www.mattelgames.com/en-us/family/apples-apples)
+	* apples-to-apples (Original Game)
+- [Cards Against Humanity](https://cardsagainsthumanity.com/)
+	* cards-against-humanity (Original Game)
+- [crhallberg](https://github.com/crhallberg)
+	* apples-to-apples ([Card Data](https://github.com/crhallberg/json-against-humanity))
+	* cards-against-humanity ([Card Data](https://github.com/crhallberg/json-against-humanity))
+- [Imgur](https://imgur.com/)
+	* lando ([API](https://apidocs.imgur.com/))
+
 ## Licensing
 The bot is licensed under the GPL 3.0 license. See the file `LICENSE` for more
 information. If you plan to use any part of this source code in your own bot, I
